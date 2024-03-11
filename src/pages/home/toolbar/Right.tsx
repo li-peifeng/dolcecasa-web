@@ -51,9 +51,9 @@ export const Right = () => {
           // bgColor={useColorModeValue("white", "$neutral4")()}
           bgColor="$neutral1"
           as={Motion.div}
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.6 }}
+          initial={{ opacity: 0, scale: 0, y: 300 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          exit={{ opacity: 0, scale: 0, y: 300 }}
           // @ts-ignore
           transition={{ duration: 0.2 }}
         >

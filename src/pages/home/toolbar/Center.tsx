@@ -25,9 +25,9 @@ export const Center = () => {
           w="max-content"
           color="$neutral11"
           as={Motion.div}
-          initial={{ opacity: 0, scale: 0.9, x: "50% ", y: 10 }}
+          initial={{ opacity: 0, scale: 0, x: "50% ", y: 100 }}
           animate={{ opacity: 1, scale: 1, x: "50%", y: 0 }}
-          exit={{ opacity: 0, scale: 0.9 }}
+          exit={{ opacity: 0, scale: 0, x: "50% ", y: 100 }}
           // @ts-ignore
           transition={{ duration: 0.2 }}
         >
@@ -38,7 +38,7 @@ export const Center = () => {
             shadow="0px 10px 30px -5px rgba(0, 0, 0, 0.3)"
             rounded="$lg"
             css={{
-              backdropFilter: "blur(8px)",
+              backdropFilter: "blur(10px)",
             }}
           >
             <For each={["rename", "move", "copy", "delete"]}>

@@ -19,7 +19,7 @@ const notify = {
           <Box
             css={{
               display: "flex",
-              backdropFilter: "blur(8px)",
+              backdropFilter: "blur(10px)",
               backgroundColor: alphaBgColor(),
               boxShadow: "$md",
               borderRadius: "$lg",
@@ -28,14 +28,6 @@ const notify = {
           >
             <div style={{ flexGrow: 1, display: "flex", alignItems: "center" }}>
               <div style={{ margin: "auto" }}>{element}</div>
-            </div>
-            <div style={{ display: "inline-block", padding: "5px" }}>
-              <CloseButton
-                style={{ float: "right" }}
-                right="$2"
-                top="$2"
-                onClick={props.close}
-              />
             </div>
           </Box>
         )

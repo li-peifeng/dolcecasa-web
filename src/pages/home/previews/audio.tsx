@@ -26,11 +26,9 @@ const Preview = () => {
     }
     return {
       name: obj.name,
-      artist: "Unknown",
+      artist: "•••",
       url: rawLink(obj, true),
-      cover:
-        getSetting("audio_cover") ||
-        "https://jsd.nn.ci/gh/alist-org/logo@main/logo.svg",
+      cover: getSetting("audio_cover") || "images/logo.svg",
       lrc: lrc,
     }
   }

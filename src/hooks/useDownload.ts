@@ -156,7 +156,7 @@ export const useDownload = () => {
         notify.success(t("home.toolbar.send_aria2_success"))
       } catch (e) {
         console.error(e)
-        notify.error(`failed to send to aria2: ${e}`)
+        notify.error(`任务未能成功发送，请检查配置`)
       }
     },
   }

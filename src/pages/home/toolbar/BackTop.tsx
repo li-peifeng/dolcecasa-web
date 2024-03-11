@@ -15,7 +15,7 @@ export const useScrollListener = (
 }
 
 export const BackTop = () => {
-  if (isMobile) return null
+  //if (isMobile) return null
 
   const [visible, setVisible] = createSignal(false)
 
@@ -25,26 +25,26 @@ export const BackTop = () => {
     <Show when={visible()}>
       <Box
         as={Motion.div}
-        initial={{ y: -999 }}
+        initial={{ y: 999 }}
         animate={{ y: 0 }}
         zIndex="$overlay"
         pos="fixed"
-        right="$5"
-        top="0"
-        borderBottomRadius="50%"
+        left="$5"
+        bottom="$5"
+        borderRadius="50%"
         bgColor="$whiteAlpha12"
         color={getMainColor()}
         overflow="hidden"
         shadow="$lg"
-        _dark={{ bgColor: getMainColor(), color: "white" }}
-        _hover={{ bgColor: getMainColor(), color: "white" }}
+        _dark={{ bgColor: "$blackAlpha12", color: getMainColor() }}
+        _hover={{ bgColor: getMainColor(), color: "$whiteAlpha12" }}
       >
         <Icon
           _focus={{
             outline: "none",
           }}
           cursor="pointer"
-          boxSize="$7"
+          boxSize="$8"
           p="$1"
           rounded="$lg"
           as={FiArrowUp}

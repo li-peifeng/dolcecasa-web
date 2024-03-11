@@ -16,7 +16,6 @@ import {
 } from "@hope-ui/solid"
 import { TiThMenu } from "solid-icons/ti"
 import { IoExit } from "solid-icons/io"
-import { SwitchColorMode, SwitchLanguageWhite } from "~/components"
 import { useRouter, useT } from "~/hooks"
 import { SideMenu } from "./SideMenu"
 import { side_menu_items } from "./sidemenu_items"
@@ -80,12 +79,6 @@ const Header = () => {
           <DrawerHeader color="$info9">{t("manage.title")}</DrawerHeader>
           <DrawerBody>
             <SideMenu items={side_menu_items} />
-            <Center>
-              <HStack spacing="$4" p="$2" color="$neutral11">
-                <SwitchLanguageWhite />
-                <SwitchColorMode />
-              </HStack>
-            </Center>
           </DrawerBody>
         </DrawerContent>
       </Drawer>

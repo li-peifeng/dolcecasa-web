@@ -25,7 +25,6 @@ import {
   Switch as HopeSwitch,
 } from "@hope-ui/solid"
 import { For, Match, onCleanup, Switch } from "solid-js"
-import { SwitchLanguageWhite, SwitchColorMode } from "~/components"
 import { useT } from "~/hooks"
 import { initialLocalSettings, local, LocalSetting, setLocal } from "~/store"
 import { bus } from "~/utils"
@@ -111,12 +110,6 @@ export const LocalSettings = () => {
               {(setting) => <LocalSettingEdit {...setting} />}
             </For>
           </VStack>
-          <Center mt="$4">
-            <HStack spacing="$4" p="$2" color="$neutral11">
-              <SwitchLanguageWhite />
-              <SwitchColorMode />
-            </HStack>
-          </Center>
         </DrawerBody>
       </DrawerContent>
     </Drawer>

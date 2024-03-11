@@ -6,15 +6,27 @@ import {
   Icon,
   Kbd,
   CenterProps,
+  IconButton,
 } from "@hope-ui/solid"
-import { Show, createMemo } from "solid-js"
-import { getSetting, local, objStore, State } from "~/store"
+import { Show, Switch, Match, createMemo } from "solid-js"
+import {
+  getMainColor,
+  layout,
+  getSetting,
+  local,
+  objStore,
+  State,
+} from "~/store"
 import { BsSearch } from "solid-icons/bs"
+import { changeColor } from "seemly"
 import { CenterLoading } from "~/components"
 import { Container } from "../Container"
 import { bus } from "~/utils"
 import { Layout } from "./layout"
+import { AiOutlineFileSearch } from "solid-icons/ai"
+import { TbListSearch } from "solid-icons/tb"
 import { isMac } from "~/utils/compatibility"
+import { CgImage } from "solid-icons/cg"
 
 export const Header = () => {
   const logos = getSetting("logo").split("\n")
@@ -44,7 +56,7 @@ export const Header = () => {
           w="$full"
           justifyContent="space-between"
         >
-          <HStack class="header-left" h="44px">
+          <HStack class="header-left" h="52px">
             <Image
               src={logo()!}
               h="$full"
@@ -54,29 +66,32 @@ export const Header = () => {
           </HStack>
           <HStack class="header-right" spacing="$2">
             <Show when={objStore.state === State.Folder}>
-              <Show when={getSetting("search_index") !== "none"}>
-                <HStack
-                  bg="$neutral4"
-                  w="$32"
-                  p="$2"
-                  rounded="$md"
-                  justifyContent="space-between"
-                  border="2px solid transparent"
-                  cursor="pointer"
-                  _hover={{
-                    borderColor: "$info6",
-                  }}
-                  onClick={() => {
-                    bus.emit("tool", "search")
-                  }}
-                >
-                  <Icon as={BsSearch} />
-                  <HStack>
-                    {isMac ? <Kbd>Cmd</Kbd> : <Kbd>Ctrl</Kbd>}
-                    <Kbd>K</Kbd>
-                  </HStack>
-                </HStack>
-              </Show>
+              <IconButton
+                aria-label="Search"
+                color={getMainColor()}
+                bgColor={changeColor(getMainColor(), { alpha: 0.15 })}
+                _hover={{
+                  bgColor: changeColor(getMainColor(), { alpha: 0.2 }),
+                }}
+                compact
+                size="lg"
+                icon={
+                  <Switch>
+                    <Match when={layout() === "list"}>
+                      <TbListSearch />
+                    </Match>
+                    <Match when={layout() === "grid"}>
+                      <AiOutlineFileSearch />
+                    </Match>
+                    <Match when={layout() === "image"}>
+                      <CgImage />
+                    </Match>
+                  </Switch>
+                }
+                onClick={() => {
+                  bus.emit("tool", "search")
+                }}
+              />
               <Layout />
             </Show>
           </HStack>

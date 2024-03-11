@@ -12,11 +12,17 @@ const [local, setLocal, { remove, clear, toJSON }] = createLocalStorage()
 export const initialLocalSettings = [
   {
     key: "aria2_rpc_url",
-    default: "http://localhost:6800/jsonrpc",
+    default: "https://localhost:443/jsonrpc",
   },
   {
     key: "aria2_rpc_secret",
     default: "",
+  },
+  {
+    key: "position_of_header_navbar",
+    default: "static",
+    type: "select",
+    options: ["static", "sticky", "only_navbar_sticky"],
   },
   {
     key: "global_default_layout",
@@ -35,12 +41,6 @@ export const initialLocalSettings = [
     default: "none",
     type: "select",
     options: ["none", "visible"],
-  },
-  {
-    key: "position_of_header_navbar",
-    default: "static",
-    type: "select",
-    options: ["static", "sticky", "only_navbar_sticky"],
   },
   {
     key: "grid_item_size",
