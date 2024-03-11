@@ -152,7 +152,8 @@
   },
   "footer": {
     "powered_by": "DolceCasa",
-    "manage": " © 2024"
+    "manage": "2024",
+    "guest": "2024"
   },
   "search": {
     "search": "Search",
