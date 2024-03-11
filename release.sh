@@ -6,6 +6,7 @@ cat package.json
 
 # build
 pnpm install
+node ./scripts/i18n.mjs
 pnpm build
 cp -r dist ../
 cd ..
