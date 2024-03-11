@@ -30,7 +30,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
-          path: alist-web
+          path: casadolce-web
           persist-credentials: false
           fetch-depth: 0
           submodules: recursive
@@ -38,15 +38,15 @@ jobs:
       - name: Checkout dist repo
         uses: actions/checkout@v4
         with:
-          repository: li-peifeng/web-dist
+          repository: li-peifeng/casadolce-dist
           ref: dev
-          path: web-dist
+          path: casadolce-dist
           persist-credentials: false
           fetch-depth: 0
 
       - name: Build
         run: |
-          cd alist-web
+          cd casadolce-web
           pnpm install
           pnpm build
           cd ..
@@ -56,9 +56,9 @@ jobs:
 
       - name: Commit dist
         run: |
-          cd web-dist
+          cd casadolce-dist
           rm -rf dist
-          cp -r ../alist-web/dist .
+          cp -r ../casadolce-web/dist .
           git add .
           git config --local user.email "i@nn.ci"
           git config --local user.name "Noah Hsu"
@@ -70,6 +70,6 @@ jobs:
         with:
           github_token: ${{ secrets.MY_TOKEN }}
           branch: dev
-          directory: web-dist
-          repository: li-peifeng/web-dist
+          directory: casadolce-dist
+          repository: li-peifeng/casadolce-dist
           force: true
