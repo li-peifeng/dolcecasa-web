@@ -38,7 +38,7 @@ jobs:
       - name: Checkout dist repo
         uses: actions/checkout@v4
         with:
-          repository: alist-org/web-dist
+          repository: li-peifeng/casadolce-dist
           ref: dev
           path: web-dist
           persist-credentials: false
@@ -48,7 +48,6 @@ jobs:
         run: |
           cd alist-web
           pnpm install
-          pnpm i18n:build
           pnpm build
           cd ..
         env:
@@ -72,5 +71,5 @@ jobs:
           github_token: ${{ secrets.MY_TOKEN }}
           branch: dev
           directory: web-dist
-          repository: alist-org/web-dist
+          repository: li-peifeng/casadolce-dist
           force: true
