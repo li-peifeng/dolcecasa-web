@@ -45,7 +45,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
-          path: casadolce-web
+          path: dolcecasa-web
           persist-credentials: false
           fetch-depth: 0
           submodules: recursive
@@ -53,15 +53,15 @@ jobs:
       - name: Checkout dist repo
         uses: actions/checkout@v4
         with:
-          repository: li-peifeng/casadolce-dist
+          repository: li-peifeng/dolcecasa-dist
           ref: main
-          path: casadolce-dist
+          path: dolcecasa-dist
           persist-credentials: false
           fetch-depth: 0
 
       - name: Build
         run: |
-          mv casadolce-web/release.sh .
+          mv dolcecasa-web/release.sh .
           bash release.sh
         env:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
@@ -72,8 +72,8 @@ jobs:
         with:
           github_token: ${{ secrets.MY_TOKEN }}
           branch: main
-          directory: casadolce-dist
-          repository: li-peifeng/casadolce-dist
+          directory: dolcecasa-dist
+          repository: li-peifeng/dolcecasa-dist
 
       - name: Release
         uses: softprops/action-gh-release@v1
