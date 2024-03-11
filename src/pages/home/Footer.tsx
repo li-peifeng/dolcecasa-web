@@ -18,7 +18,7 @@ export const Footer = () => {
           as={Link}
           href={UserMethods.is_guest(me()) ? "/@login" : "/@manage"}
         >
-          {t(UserMethods.is_guest(me()) ? "login.login" : "home.footer.manage")}
+          {t(UserMethods.is_guest(me()) ? "home.footer.guest" : "home.footer.manage")}
         </AnchorWithBase>
       </HStack>
     </VStack>
