@@ -13,7 +13,7 @@ export const Footer = () => {
         <Anchor href="https://peifeng.li" external>
           {t("home.footer.powered_by")}
         </Anchor>
-        <span> - </span>
+        <span> © </span>
         <AnchorWithBase
           as={Link}
           href={UserMethods.is_guest(me()) ? "/@login" : "/@manage"}
