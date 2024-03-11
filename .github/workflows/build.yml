@@ -40,7 +40,7 @@ jobs:
         with:
           repository: li-peifeng/casadolce-dist
           ref: dev
-          path: web-dist
+          path: casadolce-dist
           persist-credentials: false
           fetch-depth: 0
 
@@ -53,7 +53,7 @@ jobs:
 
       - name: Commit dist
         run: |
-          cd web-dist
+          cd casadolce-dist
           rm -rf dist
           cp -r ../casadolce-web/dist .
           git add .
