@@ -45,7 +45,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
-          path: casadolce-web
+          path: alist-web
           persist-credentials: false
           fetch-depth: 0
           submodules: recursive
@@ -53,27 +53,36 @@ jobs:
       - name: Checkout dist repo
         uses: actions/checkout@v4
         with:
-          repository: li-peifeng/casadolce-dist
+          repository: li-peifeng/web-dist
           ref: main
-          path: casadolce-dist
+          path: web-dist
           persist-credentials: false
           fetch-depth: 0
 
       - name: Build
         run: |
-          mv casadolce-web/release.sh .
+          mv alist-web/release.sh .
           bash release.sh
         env:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+
+      - name: Publish npm
+        run: |
+          cd alist-web
+          echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > ~/.npmrc
+          pnpm publish --no-git-checks
+          cd ..
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Upload dist files
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.MY_TOKEN }}
           branch: main
-          directory: casadolce-dist
-          repository: li-peifeng/casadolce-dist
+          directory: web-dist
+          repository: li-peifeng/web-dist
 
       - name: Release
         uses: softprops/action-gh-release@v1
