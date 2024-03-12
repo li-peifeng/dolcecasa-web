@@ -16,12 +16,12 @@ export type PreviewComponent = Pick<Preview, "name" | "component">
 
 const previews: Preview[] = [
   {
-    name: "HTML render",
+    name: "HTML 渲染",
     exts: ["html"],
     component: lazy(() => import("./html")),
   },
   {
-    name: "Aliyun Video Previewer",
+    name: "阿里云视频播放器",
     type: ObjType.VIDEO,
     provider: /^Aliyundrive(Open)?$/,
     component: lazy(() => import("./aliyun_video")),
@@ -32,54 +32,54 @@ const previews: Preview[] = [
     component: lazy(() => import("./markdown")),
   },
   {
-    name: "Markdown with word wrap",
+    name: "Markdown 自动换行",
     type: ObjType.TEXT,
     component: lazy(() => import("./markdown_with_word_wrap")),
   },
   {
-    name: "Url Open",
+    name: "打开 Url ",
     exts: ["url"],
     component: lazy(() => import("./url")),
   },
   {
-    name: "Text Editor",
+    name: "Text 编辑器",
     type: ObjType.TEXT,
     exts: ["url"],
     component: lazy(() => import("./text-editor")),
   },
   {
-    name: "Image",
+    name: "图片文件",
     type: ObjType.IMAGE,
     component: lazy(() => import("./image")),
   },
   {
-    name: "Video",
+    name: "视频文件",
     type: ObjType.VIDEO,
     component: lazy(() => import("./video")),
   },
   {
-    name: "Audio",
+    name: "音频文件",
     type: ObjType.AUDIO,
     component: lazy(() => import("./audio")),
   },
   {
-    name: "Ipa",
+    name: "IPA 文件",
     exts: ["ipa", "tipa"],
     component: lazy(() => import("./ipa")),
   },
   {
-    name: "Plist",
+    name: "PLIST 文件",
     exts: ["plist"],
     component: lazy(() => import("./plist")),
   },
   {
-    name: "Aliyun Office Previewer",
+    name: "阿里云办公文档",
     exts: ["doc", "docx", "ppt", "pptx", "xls", "xlsx", "pdf"],
     provider: /^Aliyundrive(Share)?$/,
     component: lazy(() => import("./aliyun_office")),
   },
   {
-    name: "Asciinema",
+    name: "投屏",
     exts: ["cast"],
     component: lazy(() => import("./asciinema")),
   },
@@ -112,7 +112,7 @@ export const getPreviews = (
   })
   // download page
   res.push({
-    name: "Download",
+    name: "下载",
     component: lazy(() => import("./download")),
   })
   return res
