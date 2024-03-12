@@ -63,6 +63,7 @@
     "package_download_disabled": "Package download is disabled",
     "send_aria2": "Send to Aria2",
     "aria2_not_set": "Please set aria2 rpc url",
+    "aria2_set_error": "aria2 set error",
     "send_aria2_success": "Send to aria2 successfully",
     "pre_package_download-tips": "Using streamsaver in the browser instead of the server for package download requires the corresponding storage to support cors, and the unsupported storage will fail.",
     "package_download-tips": "Downloading, please wait don't close the page",
