@@ -320,13 +320,13 @@
 }
 
 .hope-c-PJLV-idwKBiq-css {
-  background-color: #ff1e1e0d !important;
+  background-color: rgba(188, 188, 188, 0.08) !important;
   backdrop-filter: blur(10px) !important;
   -webkit-backdrop-filter: blur(10px) !important;
 }
 
 .hope-ui-dark .hope-c-PJLV-idwKBiq-css {
-  background-color: #ff1e1e26 !important;
+  background-color: rgba(88, 88, 88, 0.18) !important;
   backdrop-filter: blur(10px) !important;
   -webkit-backdrop-filter: blur(10px) !important;
 }
