@@ -316,7 +316,7 @@
   background-color: #00000000 !important;
   backdrop-filter: blur(10px) !important;
   -webkit-backdrop-filter: blur(10px) !important;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .hope-ui-light .hope-c-PJLV-ijIbXvT-css {
@@ -327,4 +327,52 @@
 .hope-ui-dark .hope-c-PJLV-ijrHllL-css {
   background-color: #00000033;
   border-radius: 10px;
+}
+
+.lg-backdrop {
+  background-color: #ffffff33 !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+}
+
+.lg-outer .lg-item.lg-complete.lg-zoomable .lg-image,
+.lg-outer .lg-item.lg-complete.lg-zoomable .lg-dummy-img {
+  border-radius: 10px;
+}
+
+.lg-sub-html {
+  color: unset !important;
+}
+
+.lg-outer .lg-thumb-item.active,
+.lg-outer .lg-thumb-item:hover {
+  border-color: #e490ffff !important;
+}
+
+.lg-outer .lg-thumb-outer {
+  background-color: #ffffff00 !important;
+}
+
+.lg-outer .lg-thumb-item {
+  border-radius: 10px;
+}
+
+.lg-next,
+.lg-prev {
+  background-color: #e490ff4d !important;
+  border-radius: 10px !important;
+  color: #fff !important;
+  font-size: 28px !important;
+}
+
+.hope-c-PJLV-idwKBiq-css {
+  background-color: #ff00000d !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+}
+
+.hope-ui-dark .hope-c-PJLV-idwKBiq-css {
+  background-color: #1e001e4d !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
 }

@@ -17,7 +17,7 @@ const Index = () => {
         }}
       >
         <I18nContext.Provider value={i18n}>
-          <NotificationsProvider duration={2000}>
+          <NotificationsProvider duration={300000}>
             <Suspense fallback={<FullScreenLoading />}>
               <App />
             </Suspense>
