@@ -1,10 +1,5 @@
 .hope-ui-light #canvas-basic {
-  background-image: linear-gradient(
-    180deg,
-    #ffffff,
-    #ffc2dd80 35%,
-    #d5fffe 100%
-  );
+  background-image: linear-gradient(#ffffff, #ffe8e8, #d8f6ff80);
   position: fixed;
   display: block;
   width: 100%;
@@ -17,12 +12,7 @@
 }
 
 .hope-ui-dark #canvas-basic {
-  background-image: linear-gradient(
-    180deg,
-    #000000,
-    #62120090 35%,
-    #001900 100%
-  );
+  background-image: linear-gradient(180deg, #000000, #4d4d4d80 35%, #010409);
   position: fixed;
   display: block;
   width: 100%;
@@ -364,19 +354,19 @@
 
 .hope-ui-light .lg-outer .lg-thumb-item.active,
 .lg-outer .lg-thumb-item:hover {
-  border-color: #ff59d5ff !important;
+  border-color: #505050 !important;
 }
 
 .hope-ui-light .lg-outer .lg-thumb-item:hover {
-  border-color: #ff59d5ff !important;
+  border-color: #777777 !important;
 }
 
 .hope-ui-dark .lg-outer .lg-thumb-item.active {
-  border-color: #ff00ff80 !important;
+  border-color: #d9d9d9 !important;
 }
 
 .hope-ui-dark .lg-outer .lg-thumb-item:hover {
-  border-color: #ff00ff80 !important;
+  border-color: #d9d9d9 !important;
 }
 
 .hope-ui-light .lg-outer .lg-thumb-item {
@@ -384,7 +374,7 @@
 }
 
 .hope-ui-dark .lg-outer .lg-thumb-item {
-  border: 2px solid #8f8f8f !important;
+  border: 2px solid #505050 !important;
 }
 
 .hope-ui-light .lg-outer .lg-thumb-outer {
@@ -443,13 +433,13 @@
   color: #a0a0a0 !important;
 }
 
-.lg-progress-bar {
+.hope-ui-light .lg-progress-bar {
   background-color: #ffffff00 !important;
   height: 3px !important;
 }
 
-.lg-progress-bar .lg-progress {
-  background-color: #ff59d5ff !important;
+.hope-ui-light .lg-progress-bar .lg-progress {
+  background-color: #aaaaaa !important;
   height: 3px !important;
 }
 
@@ -459,6 +449,16 @@
 }
 
 .hope-ui-dark .lg-progress-bar .lg-progress {
-  background-color: #ff00ff80 !important;
+  background-color: #888888 !important;
   height: 3px !important;
+}
+
+.hope-ui-light .lg-toolbar .lg-icon:hover {
+  background-color: #ffffff00 !important;
+  color: #ff0077 !important;
+}
+
+.hope-ui-dark .lg-toolbar .lg-icon:hover {
+  background-color: #00000000 !important;
+  color: #ff0077 !important;
 }

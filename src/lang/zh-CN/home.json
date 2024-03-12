@@ -14,7 +14,7 @@
     "tr-install": "TrollStore",
     "tr-installing": "TrollStore 正在安装",
     "open_in_new_window": "在新窗口中打开",
-    "auto_next": "自动下一个"
+    "auto_next": "自动按序播放"
   },
   "layouts": {
     "list": "列表视图",
