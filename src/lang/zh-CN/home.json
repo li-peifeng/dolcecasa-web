@@ -63,6 +63,7 @@
     "package_download_disabled": "打包下载已禁用",
     "send_aria2": "发送到 Aria2",
     "aria2_not_set": "请设置 Aria2 RPC 网址",
+    "aria2_set_error": "任务发送失败，请检查配置",
     "send_aria2_success": "成功发送到 Aria2",
     "pre_package_download-tips": "在浏览器中使用streamsaver而不是服务器来进行包下载需要相应的存储支持cors，而不支持的存储将失败。",
     "package_download-tips": "正在下载中，请不要关闭当前页面哦",
