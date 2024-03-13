@@ -17,7 +17,7 @@ export const handleResp = <T>(
     if (auth && resp.code === 401) {
       bus.emit(
         "to",
-        `/@login?redirect=${encodeURIComponent(location.pathname)}`,
+        `/@tiamo?redirect=${encodeURIComponent(location.pathname)}`,
       )
       return
     }

@@ -53,7 +53,7 @@ const Header = () => {
             color="$info9"
             cursor="pointer"
             onClick={() => {
-              to("/@manage")
+              to("/@amore")
             }}
           >
             {t("manage.title")}
@@ -66,7 +66,7 @@ const Header = () => {
             onClick={() => {
               changeToken()
               notify.success(t("manage.logout_success"))
-              to(`/@login?redirect=${encodeURIComponent(location.pathname)}`)
+              to(`/@tiamo?redirect=${encodeURIComponent(location.pathname)}`)
             }}
             size="sm"
           />

@@ -177,7 +177,7 @@ const AddOrEdit = () => {
         onClick={async () => {
           if (drivers()[storage.driver].config.need_ms) {
             notify.info(t("manage.add_storage-tips"))
-            window.open(joinBase("/@manage/messenger"), "_blank")
+            window.open(joinBase("/@amore/messenger"), "_blank")
           }
           const resp = await ok()
           // TODO maybe can use handleRrespWithNotifySuccess
@@ -189,7 +189,7 @@ const AddOrEdit = () => {
             },
             (msg, code) => {
               if (resp.data.id) {
-                to(`/@manage/storages/edit/${resp.data.id}`)
+                to(`/@amore/storages/edit/${resp.data.id}`)
               }
             },
           )

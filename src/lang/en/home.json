@@ -23,7 +23,7 @@
   },
   "no_images": "No images in the current folder",
   "load_more": "Load more",
-  "no_more": "No more",
+  "no_more": "············",
   "input_password": "Please input password",
   "toolbar": {
     "more": "More",
@@ -152,9 +152,9 @@
     "success": "Download completed"
   },
   "footer": {
-    "powered_by": "DolceCasa",
-    "manage": "2024",
-    "guest": "2024"
+    "powered_by": "PeiFeng.Li",
+    "manage": "DolceCasa",
+    "guest": "DolceCasa"
   },
   "search": {
     "search": "Search",

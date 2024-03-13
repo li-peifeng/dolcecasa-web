@@ -32,7 +32,7 @@ instance.interceptors.response.use(
     //   notify.error(resp.message);
     //   bus.emit(
     //     "to",
-    //     `/@login?redirect=${encodeURIComponent(window.location.pathname)}`
+    //     `/@tiamo?redirect=${encodeURIComponent(window.location.pathname)}`
     //   );
     // }
     return resp

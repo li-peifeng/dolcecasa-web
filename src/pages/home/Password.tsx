@@ -49,7 +49,7 @@ const Password = () => {
           <Text
             color="$info9"
             as={LinkWithBase}
-            href={`/@login?redirect=${encodeURIComponent(location.pathname)}`}
+            href={`/@tiamo?redirect=${encodeURIComponent(location.pathname)}`}
           >
             {t("global.go_login")}
           </Text>

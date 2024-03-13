@@ -13,6 +13,9 @@ import { usePath } from "~/hooks"
 import { Motion } from "@motionone/solid"
 import { isTocVisible, setTocDisabled } from "~/components"
 import { BiSolidBookContent } from "solid-icons/bi"
+import { useColorMode, useColorModeValue } from "@hope-ui/solid"
+import { FiSun as Sun } from "solid-icons/fi"
+import { FiMoon as Moon } from "solid-icons/fi"
 
 export const Right = () => {
   const { isOpen, onToggle } = createDisclosure({
@@ -23,6 +26,20 @@ export const Right = () => {
   const margin = createMemo(() => (isOpen() ? "$4" : "$5"))
   const isFolder = createMemo(() => objStore.state === State.Folder)
   const { refresh } = usePath()
+  const { toggleColorMode } = useColorMode()
+  const icon = useColorModeValue(
+    {
+      size: "$8",
+      component: Moon,
+      p: "$0_5",
+    },
+    {
+      size: "$8",
+      component: Sun,
+      p: "$0_5",
+    },
+  )
+
   return (
     <Box
       class="left-toolbar-box"
@@ -141,6 +158,11 @@ export const Right = () => {
               onClick={() => {
                 bus.emit("tool", "local_settings")
               }}
+            />
+            <RightIcon
+              as={icon().component}
+              tips="toggle_theme"
+              onClick={toggleColorMode}
             />
           </VStack>
           <RightIcon tips="more" as={CgMoreO} onClick={onToggle} />

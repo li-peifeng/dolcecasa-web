@@ -38,7 +38,7 @@ function StorageOp(props: StorageProps) {
     <>
       <Button
         onClick={() => {
-          to(`/@manage/storages/edit/${props.storage.id}`)
+          to(`/@amore/storages/edit/${props.storage.id}`)
         }}
       >
         {t("global.edit")}

@@ -96,7 +96,7 @@ const Profile = () => {
       setMe({ ...me(), username: username() })
       if (!ssoID) {
         notify.success(t("users.update_profile_success"))
-        to(`/@login?redirect=${encodeURIComponent(location.pathname)}`)
+        to(`/@tiamo?redirect=${encodeURIComponent(location.pathname)}`)
       } else {
         to("")
       }
@@ -152,7 +152,7 @@ const Profile = () => {
               <Text
                 color="$info9"
                 as={LinkWithBase}
-                href={`/@login?redirect=${encodeURIComponent(
+                href={`/@tiamo?redirect=${encodeURIComponent(
                   location.pathname,
                 )}`}
               >
@@ -213,7 +213,7 @@ const Profile = () => {
             <Button
               colorScheme="accent"
               onClick={() => {
-                to("/@manage/2fa")
+                to("/@amore/2fa")
               }}
             >
               {t("users.enable_2fa")}

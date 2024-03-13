@@ -23,7 +23,7 @@
   },
   "no_images": "当前文件夹没有图片哦",
   "load_more": "加载更多",
-  "no_more": "～～～～～*～～～～～",
+  "no_more": "············",
   "input_password": "请输入密码",
   "toolbar": {
     "more": "更多",
@@ -156,9 +156,9 @@
     "success": "下载完成，太棒了！"
   },
   "footer": {
-    "powered_by": "DolceCasa",
-    "manage": "2024",
-    "guest": "2024"
+    "powered_by": "PeiFeng.Li",
+    "manage": "DolceCasa",
+    "guest": "DolceCasa"
   },
   "search": {
     "search": "搜索",
