@@ -16,7 +16,7 @@ import { BiSolidBookContent } from "solid-icons/bi"
 import { useColorMode, useColorModeValue } from "@hope-ui/solid"
 import { FiSun as Sun } from "solid-icons/fi"
 import { FiMoon as Moon } from "solid-icons/fi"
-import { VsColorMode as Auto } from 'solid-icons/vs'
+import { VsColorMode as Auto } from "solid-icons/vs"
 
 export const Right = () => {
   const { isOpen, onToggle } = createDisclosure({
@@ -44,7 +44,6 @@ export const Right = () => {
       component: Auto,
       p: "$0_5",
     },
-
   )
 
   return (
