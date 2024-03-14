@@ -169,7 +169,7 @@ export const Right = () => {
               onClick={() => {
                 localStorage.removeItem("hope-ui-color-mode")
                 notificationService.show({
-                  status: "success" /* info or success, warning, danger */,
+                  status: "success",
                   description: "设置成功，请稍候，正在刷新页面",
                   closable: false,
                 })
