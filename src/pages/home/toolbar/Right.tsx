@@ -1,4 +1,9 @@
-import { Box, createDisclosure, VStack } from "@hope-ui/solid"
+import {
+  Box,
+  createDisclosure,
+  VStack,
+  notificationService,
+} from "@hope-ui/solid"
 import { createMemo, Show } from "solid-js"
 import { RightIcon } from "./Icon"
 import { CgMoreO } from "solid-icons/cg"
@@ -37,11 +42,6 @@ export const Right = () => {
     {
       size: "$8",
       component: Sun,
-      p: "$0_5",
-    },
-    {
-      size: "$8",
-      component: Auto,
       p: "$0_5",
     },
   )
@@ -159,16 +159,31 @@ export const Right = () => {
               onClick={toggleCheckbox}
             />
             <RightIcon
+              as={icon().component}
+              tips="toggle_theme"
+              onClick={toggleColorMode}
+            />
+            <RightIcon
+              as={Auto}
+              tips="toggle_theme_auto"
+              onClick={() => {
+                localStorage.removeItem("hope-ui-color-mode")
+                notificationService.show({
+                  status: "success" /* info or success, warning, danger */,
+                  description: "设置成功，请稍候，正在刷新页面",
+                  closable: false,
+                })
+                setTimeout(function () {
+                  location.reload()
+                }, 2500)
+              }}
+            />
+            <RightIcon
               as={AiOutlineSetting}
               tips="local_settings"
               onClick={() => {
                 bus.emit("tool", "local_settings")
               }}
-            />
-            <RightIcon
-              as={icon().component}
-              tips="toggle_theme"
-              onClick={toggleColorMode}
             />
           </VStack>
           <RightIcon tips="more" as={CgMoreO} onClick={onToggle} />

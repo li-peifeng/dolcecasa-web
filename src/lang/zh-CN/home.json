@@ -28,7 +28,8 @@
   "toolbar": {
     "more": "更多",
     "refresh": "刷新",
-    "toggle_theme": "切换主题",
+    "toggle_theme": "主题切换",
+    "toggle_theme_auto": "自动切换主题",
     "switch_lang": "切换语言",
     "toggle_markdown_toc": "Markdown ToC 开关",
     "toggle_checkbox": "复选框开关",

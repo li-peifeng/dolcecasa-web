@@ -38,6 +38,7 @@ const notify = {
     notificationService.show({
       status: "success",
       title: firstUpperCase(message),
+      closable: false,
       // render: (props) => (
       //   <Alert status="success" shadow="$md">
       //     <AlertIcon mr="$2_5" />
@@ -51,6 +52,7 @@ const notify = {
     notificationService.show({
       status: "danger",
       title: firstUpperCase(message),
+      closable: false,
       // render: (props) => (
       //   <Alert status="danger" shadow="$md">
       //     <AlertIcon mr="$2_5" />
@@ -64,6 +66,7 @@ const notify = {
     notificationService.show({
       status: "info",
       title: firstUpperCase(message),
+      closable: false,
       // render: (props) => (
       //   <Alert status="info" shadow="$md">
       //     <AlertIcon mr="$2_5" />
@@ -77,6 +80,7 @@ const notify = {
     notificationService.show({
       status: "warning",
       title: firstUpperCase(message),
+      closable: false,
       // render: (props) => (
       //   <Alert status="warning" shadow="$md">
       //     <AlertIcon mr="$2_5" />
