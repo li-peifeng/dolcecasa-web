@@ -88,6 +88,11 @@ export const Right = () => {
                 tips="refresh"
                 onClick={() => {
                   refresh(undefined, true)
+                  notificationService.show({
+                    status: "success",
+                    description: "目录刷新成功",
+                    closable: false,
+                  })
                 }}
               />
               <RightIcon
@@ -170,7 +175,7 @@ export const Right = () => {
                 localStorage.removeItem("hope-ui-color-mode")
                 notificationService.show({
                   status: "success",
-                  description: "设置成功，请稍候，正在刷新页面",
+                  description: "主题设置成功，正在刷新页面",
                   closable: false,
                 })
                 setTimeout(function () {
