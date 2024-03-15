@@ -3,8 +3,6 @@ import {
   useColorModeValue,
   Image,
   Center,
-  Icon,
-  Kbd,
   CenterProps,
   IconButton,
 } from "@hope-ui/solid"
@@ -17,7 +15,6 @@ import {
   objStore,
   State,
 } from "~/store"
-import { BsSearch } from "solid-icons/bs"
 import { changeColor } from "seemly"
 import { CenterLoading } from "~/components"
 import { Container } from "../Container"
@@ -25,7 +22,6 @@ import { bus } from "~/utils"
 import { Layout } from "./layout"
 import { AiOutlineFileSearch } from "solid-icons/ai"
 import { TbListSearch } from "solid-icons/tb"
-import { isMac } from "~/utils/compatibility"
 import { CgImage } from "solid-icons/cg"
 
 export const Header = () => {
@@ -69,7 +65,7 @@ export const Header = () => {
               <IconButton
                 aria-label="Search"
                 color={getMainColor()}
-                bgColor={changeColor(getMainColor(), { alpha: 0.15 })}
+                bgColor={changeColor(getMainColor(), { alpha: 0.05 })}
                 _hover={{
                   bgColor: changeColor(getMainColor(), { alpha: 0.2 }),
                 }}

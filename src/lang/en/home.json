@@ -26,7 +26,9 @@
   "no_more": "············",
   "input_password": "Please input password",
   "toolbar": {
-    "more": "More",
+    "more": "open toolbar",
+    "close": "close toolbar",
+    "browser_setting": "browser setting",
     "refresh": "Refresh",
     "toggle_theme": "Toggle Theme",
     "toggle_theme_auto": "Auto toggle theme",

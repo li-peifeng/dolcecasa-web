@@ -6,7 +6,6 @@ import {
 } from "@hope-ui/solid"
 import { createMemo, Show } from "solid-js"
 import { RightIcon } from "./Icon"
-import { CgMoreO } from "solid-icons/cg"
 import { TbCheckbox } from "solid-icons/tb"
 import { objStore, State, toggleCheckbox, userCan } from "~/store"
 import { bus } from "~/utils"
@@ -21,7 +20,8 @@ import { BiSolidBookContent } from "solid-icons/bi"
 import { useColorMode, useColorModeValue } from "@hope-ui/solid"
 import { FiSun as Sun } from "solid-icons/fi"
 import { FiMoon as Moon } from "solid-icons/fi"
-import { VsColorMode as Auto } from "solid-icons/vs"
+import { IoContrastOutline as Auto } from "solid-icons/io"
+import { VsHeart } from "solid-icons/vs"
 
 export const Right = () => {
   const { isOpen, onToggle } = createDisclosure({
@@ -58,7 +58,8 @@ export const Right = () => {
         fallback={
           <RightIcon
             class="toolbar-toggle"
-            as={CgMoreO}
+            tips="more"
+            as={VsHeart}
             onClick={() => {
               onToggle()
             }}
@@ -185,13 +186,13 @@ export const Right = () => {
             />
             <RightIcon
               as={AiOutlineSetting}
-              tips="local_settings"
+              tips="browser_setting"
               onClick={() => {
                 bus.emit("tool", "local_settings")
               }}
             />
           </VStack>
-          <RightIcon tips="more" as={CgMoreO} onClick={onToggle} />
+          <RightIcon tips="close" as={VsHeart} onClick={onToggle} />
         </VStack>
       </Show>
     </Box>

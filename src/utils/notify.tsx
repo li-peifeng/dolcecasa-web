@@ -1,13 +1,4 @@
-import {
-  Box,
-  CloseButton,
-  // Alert,
-  // AlertDescription,
-  // AlertIcon,
-  // AlertTitle,
-  // CloseButton,
-  notificationService,
-} from "@hope-ui/solid"
+import { Box, notificationService } from "@hope-ui/solid"
 import { JSXElement } from "solid-js"
 import { alphaBgColor, firstUpperCase } from "."
 
@@ -19,7 +10,7 @@ const notify = {
           <Box
             css={{
               display: "flex",
-              backdropFilter: "blur(10px)",
+              backdropFilter: "blur(20px)",
               backgroundColor: alphaBgColor(),
               boxShadow: "$md",
               borderRadius: "$lg",

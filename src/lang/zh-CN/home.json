@@ -26,7 +26,9 @@
   "no_more": "············",
   "input_password": "请输入密码",
   "toolbar": {
-    "more": "更多",
+    "more": "打开工具栏",
+    "close": "关闭工具栏",
+    "browser_setting": "浏览器设置",
     "refresh": "刷新",
     "toggle_theme": "主题切换",
     "toggle_theme_auto": "自动切换主题",

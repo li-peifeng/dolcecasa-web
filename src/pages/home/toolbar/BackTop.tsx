@@ -1,9 +1,8 @@
 import { Show, createSignal, onCleanup } from "solid-js"
 import { Box, Icon } from "@hope-ui/solid"
-import { FiArrowUp } from "solid-icons/fi"
 import { Motion } from "@motionone/solid"
-import { isMobile } from "~/utils/compatibility"
 import { getMainColor } from "~/store"
+import { CgChevronDoubleUpO } from "solid-icons/cg"
 
 export const useScrollListener = (
   callback: (e?: Event) => void,
@@ -31,7 +30,7 @@ export const BackTop = () => {
         pos="fixed"
         left="$5"
         bottom="$5"
-        borderRadius="50%"
+        borderRadius="10px"
         bgColor="$whiteAlpha12"
         color={getMainColor()}
         overflow="hidden"
@@ -47,7 +46,7 @@ export const BackTop = () => {
           boxSize="$8"
           p="$1"
           rounded="$lg"
-          as={FiArrowUp}
+          as={CgChevronDoubleUpO}
           onClick={() => {
             window.scrollTo({ top: 0, behavior: "smooth" })
           }}

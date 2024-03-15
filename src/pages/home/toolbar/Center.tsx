@@ -38,7 +38,7 @@ export const Center = () => {
             shadow="0px 10px 30px -5px rgba(0, 0, 0, 0.3)"
             rounded="$lg"
             css={{
-              backdropFilter: "blur(10px)",
+              backdropFilter: "blur(20px)",
             }}
           >
             <For each={["rename", "move", "copy", "delete"]}>

@@ -45,6 +45,7 @@ import {
 } from "~/utils"
 import { isMac } from "~/utils/compatibility"
 import { getIconByObj } from "~/utils/icon"
+import { changeColor } from "seemly"
 
 // class MarkKeywords {
 //   root
@@ -274,6 +275,7 @@ const Search = () => {
               <Input
                 id="search-input"
                 value={keywords()}
+                color={getMainColor()}
                 onInput={(e) => {
                   setKeywords(e.currentTarget.value)
                 }}
@@ -287,6 +289,11 @@ const Search = () => {
                 flexShrink={0}
                 aria-label="search"
                 icon={<BsSearch />}
+                color={getMainColor()}
+                bgColor={changeColor(getMainColor(), { alpha: 0.05 })}
+                // _hover={{
+                //   bgColor: changeColor(getMainColor(), { alpha: 0.2 }),
+                // }}
                 onClick={() => search()}
                 loading={loading()}
                 disabled={keywords().length === 0}
