@@ -48,7 +48,7 @@ export const Right = () => {
 
   return (
     <Box
-      class="left-toolbar-box"
+      class="right-toolbar-box"
       pos="fixed"
       right={margin()}
       bottom={margin()}
@@ -67,7 +67,7 @@ export const Right = () => {
         }
       >
         <VStack
-          class="left-toolbar"
+          class="right-toolbar"
           p="$1"
           rounded="$lg"
           spacing="$1"
@@ -81,7 +81,7 @@ export const Right = () => {
           // @ts-ignore
           transition={{ duration: 0.2 }}
         >
-          <VStack spacing="$1" class="left-toolbar-in">
+          <VStack spacing="$1" class="right-toolbar-in">
             <Show when={isFolder() && (userCan("write") || objStore.write)}>
               {/* <Add /> */}
               <RightIcon
