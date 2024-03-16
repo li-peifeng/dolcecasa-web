@@ -1,7 +1,7 @@
 # replace version
 cd dolcecasa-web
 version=$(git describe --abbrev=0 --tags)
-sed -i -e "s/3.0.0/$version/g" package.json
+sed -i -e "s/2024.0.0/$version/g" package.json
 cat package.json
 
 # build
