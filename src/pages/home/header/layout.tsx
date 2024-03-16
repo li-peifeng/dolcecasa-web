@@ -12,6 +12,7 @@ import { Switch, Match, For } from "solid-js"
 import { Dynamic } from "solid-js/web"
 import { useT } from "~/hooks"
 import { getMainColor, LayoutType, layout, setLayout } from "~/store"
+import { TbPhotoSearch } from "solid-icons/tb"
 
 const layouts = {
   list: FaSolidListUl,
@@ -33,7 +34,7 @@ export const Layout = () => {
         }}
         aria-label="switch layout"
         compact
-        size="lg"
+        size="xl"
         icon={
           <Switch>
             <Match when={layout() === "list"}>
@@ -43,7 +44,7 @@ export const Layout = () => {
               <BsGridFill />
             </Match>
             <Match when={layout() === "image"}>
-              <BsCardImage />
+              <TbPhotoSearch />
             </Match>
           </Switch>
         }

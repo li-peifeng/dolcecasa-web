@@ -123,7 +123,7 @@ const theme: HopeThemeConfig = {
         root: {
           rounded: "$lg",
           border: "unset",
-          backdropFilter: "blur(20px)",
+          backdropFilter: "blur(15px)",
           backgroundColor: "#ffffff00",
         },
       },
@@ -133,7 +133,7 @@ const theme: HopeThemeConfig = {
         root: {
           rounded: "$lg",
           backgroundColor: "#ffffff00",
-          backdropFilter: "blur(20px)",
+          backdropFilter: "blur(15px)",
         },
       },
     },

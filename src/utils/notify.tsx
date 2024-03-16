@@ -10,7 +10,7 @@ const notify = {
           <Box
             css={{
               display: "flex",
-              backdropFilter: "blur(20px)",
+              backdropFilter: "blur(15px)",
               backgroundColor: alphaBgColor(),
               boxShadow: "$md",
               borderRadius: "$lg",

@@ -54,7 +54,7 @@
   .aplayer-bar-wrap
   .aplayer-bar
   .aplayer-played {
-  background: rgb(0, 120, 240) !important;
+  background: #0078f0 !important;
 }
 
 /* music 歌词栏透明 */
@@ -78,18 +78,13 @@
 .aplayer .aplayer-list ol li:hover,
 .aplayer .aplayer-list ol li.aplayer-list-light {
   background-color: #ffffff00;
-  background-image: linear-gradient(180deg, #ffffff, #ffdedecc, #ffffff);
+  background-image: linear-gradient(180deg, #ffffff99, #ffdede99, #ffffff99);
 }
 
 .hope-ui-dark .aplayer .aplayer-list ol li:hover,
 .hope-ui-dark .aplayer .aplayer-list ol li.aplayer-list-light {
   background-color: #00000000;
-  background-image: linear-gradient(
-    180deg,
-    #a1a1a160,
-    #004810,
-    /* #002408, */ #a1a1a160
-  );
+  background-image: linear-gradient(180deg, #7e7e7e99, #00ff0000, #7e7e7e99);
 }
 
 .hope-ui-dark .aplayer .aplayer-info .aplayer-music .aplayer-author {

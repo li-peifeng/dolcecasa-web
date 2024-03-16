@@ -31,11 +31,11 @@ export const BackTop = () => {
         left="$5"
         bottom="$5"
         borderRadius="10px"
-        bgColor="$whiteAlpha12"
+        bgColor="#ffffff00"
         color={getMainColor()}
         overflow="hidden"
         shadow="$lg"
-        _dark={{ bgColor: "$blackAlpha12", color: getMainColor() }}
+        _dark={{ bgColor: "#00000000", color: getMainColor() }}
         _hover={{ bgColor: getMainColor(), color: "$whiteAlpha12" }}
       >
         <Icon
@@ -43,7 +43,7 @@ export const BackTop = () => {
             outline: "none",
           }}
           cursor="pointer"
-          boxSize="$8"
+          boxSize="$9"
           p="$1"
           rounded="$lg"
           as={CgChevronDoubleUpO}

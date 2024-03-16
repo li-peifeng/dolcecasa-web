@@ -20,7 +20,7 @@ export const Center = () => {
         <Box
           class="center-toolbar"
           pos="fixed"
-          bottom="$4"
+          bottom="$5"
           right="50%"
           w="max-content"
           color="$neutral11"
@@ -38,7 +38,7 @@ export const Center = () => {
             shadow="0px 10px 30px -5px rgba(0, 0, 0, 0.3)"
             rounded="$lg"
             css={{
-              backdropFilter: "blur(20px)",
+              backdropFilter: "blur(15px)",
             }}
           >
             <For each={["rename", "move", "copy", "delete"]}>
