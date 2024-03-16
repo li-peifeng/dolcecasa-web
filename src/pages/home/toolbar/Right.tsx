@@ -20,8 +20,8 @@ import { BiSolidBookContent } from "solid-icons/bi"
 import { useColorMode, useColorModeValue } from "@hope-ui/solid"
 import { FiSun as Sun } from "solid-icons/fi"
 import { FiMoon as Moon } from "solid-icons/fi"
-import { IoContrastOutline as Auto } from "solid-icons/io"
 import { VsHeart } from "solid-icons/vs"
+import { VsActivateBreakpoints as Auto } from "solid-icons/vs"
 
 export const Right = () => {
   const { isOpen, onToggle } = createDisclosure({
