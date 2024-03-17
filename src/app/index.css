@@ -48,8 +48,8 @@
 }
 
 .hope-c-UdTFD {
-  width: 35%;
-  min-width: 230px;
+  width: 35% !important;
+  min-width: 230px !important;
 }
 
 .hope-c-PJLV-icWrYmg-css {
