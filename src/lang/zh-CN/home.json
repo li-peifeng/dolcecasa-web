@@ -68,7 +68,7 @@
     "aria2_not_set": "请设置 Aria2 RPC 网址",
     "aria2_set_error": "任务发送失败，请检查配置",
     "send_aria2_success": "成功发送到 Aria2",
-    "pre_package_download-tips": "在浏览器中使用streamsaver而不是服务器来进行包下载需要相应的存储支持cors，而不支持的存储将失败。",
+    "pre_package_download-tips": "在浏览器中使用streamsaver而不是服务器来进行包下载需要相应的存储支持cors,而不支持的存储将失败。",
     "package_download-tips": "正在下载中，请不要关闭当前页面哦",
     "upload": "上传",
     "local_settings": "浏览器设置",
@@ -152,9 +152,9 @@
   "package_download": {
     "current_status": "当前状态",
     "initializing": "正在初始化",
-    "fetching_struct": "正在获取文件夹内容",
-    "fetching_struct_failed": "获取文件夹内容失败",
-    "downloading": "下载文件中，不要关闭或刷新页面哦",
+    "fetching_struct": "正在获取内容",
+    "fetching_struct_failed": "获取内容失败",
+    "downloading": "稍等，别关闭页面哦",
     "failed": "打包下载失败",
     "success": "下载完成，太棒了！"
   },
