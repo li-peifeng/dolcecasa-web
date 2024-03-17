@@ -46,6 +46,18 @@ export const initialLocalSettings = [
     type: "select",
     options: ["ellipsis", "scrollable", "multi_line"],
   },
+  {
+    key: "open_item_on_checkbox",
+    default: "direct",
+    type: "select",
+    options: ["direct", "with_alt", "with_ctrl"],
+  },
+  {
+    key: "select_with_mouse",
+    default: "disabled",
+    type: "select",
+    options: ["disabled", "open_item_with_dblclick"],
+  },
 ]
 
 export type LocalSetting = (typeof initialLocalSettings)[number]
