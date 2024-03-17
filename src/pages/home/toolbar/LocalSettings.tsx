@@ -26,7 +26,13 @@ import {
 } from "@hope-ui/solid"
 import { For, Match, onCleanup, Switch } from "solid-js"
 import { useT } from "~/hooks"
-import { initialLocalSettings, local, LocalSetting, setLocal } from "~/store"
+import {
+  initialLocalSettings,
+  getMainColor,
+  local,
+  LocalSetting,
+  setLocal,
+} from "~/store"
 import { bus } from "~/utils"
 import { SwitchColorMode } from "~/components"
 import { Icon } from "@hope-ui/solid"
@@ -118,6 +124,7 @@ export const LocalSettings = () => {
             <HStack spacing="$4" p="$2" color="$neutral11">
               <SwitchColorMode />
               <Icon
+                color={getMainColor()}
                 as={Auto}
                 cursor="pointer"
                 boxSize="$8"
