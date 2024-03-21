@@ -7,18 +7,11 @@ docker pull leolitaly/dolcecasa:latest
 
 预览图
 
-<img width="1071" alt="截屏2024-03-15 21 46 16" src="https://github.com/li-peifeng/dolcecasa/assets/103113557/1983c6f0-c9b3-47de-9ebc-1229f83c60b2">
-<img width="1071" alt="截屏2024-03-15 21 46 08" src="https://github.com/li-peifeng/dolcecasa/assets/103113557/20728309-55db-4fc0-99de-94b3f9601580">
-<img width="1071" alt="截屏2024-03-15 21 45 56" src="https://github.com/li-peifeng/dolcecasa/assets/103113557/f301a8f9-3244-437c-a61f-6cfaca920c77">
-<img width="1071" alt="截屏2024-03-15 21 45 46" src="https://github.com/li-peifeng/dolcecasa/assets/103113557/6ec6371b-5d0c-450f-8ae7-536425213d1f">
-<img width="1071" alt="截屏2024-03-15 21 43 27" src="https://github.com/li-peifeng/dolcecasa/assets/103113557/0f9f988b-bab3-47be-a5ff-ca2da33b0478">
-<img width="1071" alt="截屏2024-03-15 21 43 23" src="https://github.com/li-peifeng/dolcecasa/assets/103113557/810d9325-1e1d-418d-b768-2045cc360ac4">
-<img width="1071" alt="截屏2024-03-15 21 43 13" src="https://github.com/li-peifeng/dolcecasa/assets/103113557/c10595c4-6ca1-4a02-9cae-e1e2b4685b45">
-<img width="1071" alt="截屏2024-03-15 21 43 02" src="https://github.com/li-peifeng/dolcecasa/assets/103113557/3e5a8ede-a310-4530-9e17-667011446da6">
-<img width="1071" alt="截屏2024-03-15 21 42 36" src="https://github.com/li-peifeng/dolcecasa/assets/103113557/d6e4351e-0b9c-4093-86c5-fc8dbcc0bb8d">
-<img width="1071" alt="截屏2024-03-15 21 41 39" src="https://github.com/li-peifeng/dolcecasa/assets/103113557/70f47509-2fb4-4f4b-9788-4a7b9977d391">
-<img width="1071" alt="截屏2024-03-15 21 41 28" src="https://github.com/li-peifeng/dolcecasa/assets/103113557/234777a5-138c-485d-8cde-882f58934ea0">
-<img width="1071" alt="截屏2024-03-15 21 40 57" src="https://github.com/li-peifeng/dolcecasa/assets/103113557/726de71d-089c-4f73-ae2d-b718f4bbaa03">
-<img width="1071" alt="截屏2024-03-15 21 40 40" src="https://github.com/li-peifeng/dolcecasa/assets/103113557/cd73d98f-f1bd-4e34-99c7-f5b6822f8751">
-<img width="1071" alt="截屏2024-03-15 21 40 23" src="https://github.com/li-peifeng/dolcecasa/assets/103113557/e4765cca-7a4f-43bf-b7ed-744663d331a0">
-<img width="1071" alt="截屏2024-03-15 21 40 00" src="https://github.com/li-peifeng/dolcecasa/assets/103113557/7d0c9425-31ae-41f9-bea5-252ab4b6d092">
+<img width="1183" alt="截屏2024-03-21 17 03 28" src="https://github.com/li-peifeng/dolcecasa/assets/103113557/367e6258-4d83-4b2e-bc6f-53928482c2bf">
+<img width="1183" alt="截屏2024-03-21 17 03 37" src="https://github.com/li-peifeng/dolcecasa/assets/103113557/b5fca809-3379-42bc-8ce2-d77126b5110e">
+<img width="1183" alt="截屏2024-03-21 17 03 48" src="https://github.com/li-peifeng/dolcecasa/assets/103113557/6995ea71-b755-4056-813a-0bc184f6d1d6">
+<img width="1183" alt="截屏2024-03-21 17 04 19" src="https://github.com/li-peifeng/dolcecasa/assets/103113557/405cd721-34af-45b7-bb73-d567361f20f7">
+<img width="1183" alt="截屏2024-03-21 17 04 42" src="https://github.com/li-peifeng/dolcecasa/assets/103113557/a53da1cc-a997-4bdf-adc6-c1a4b4d19067">
+<img width="1183" alt="截屏2024-03-21 17 04 47" src="https://github.com/li-peifeng/dolcecasa/assets/103113557/97815e85-e1f6-4c44-b02f-1cc570d81fa7">
+<img width="1183" alt="截屏2024-03-21 17 04 54" src="https://github.com/li-peifeng/dolcecasa/assets/103113557/05e409fa-a2cc-4c12-b680-0dc890d2f11d">
+<img width="1183" alt="截屏2024-03-21 17 05 11" src="https://github.com/li-peifeng/dolcecasa/assets/103113557/7df3a8f3-b70e-46a3-af20-98af9cea8513">
