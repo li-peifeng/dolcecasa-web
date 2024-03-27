@@ -1,5 +1,5 @@
 import { createLocalStorage } from "@solid-primitives/storage"
-
+import { isMobile } from "~/utils/compatibility"
 const [local, setLocal, { remove, clear, toJSON }] = createLocalStorage()
 
 export const initialLocalSettings = [
