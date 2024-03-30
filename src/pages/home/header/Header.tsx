@@ -68,7 +68,7 @@ export const Header = () => {
                   bgColor: changeColor(getMainColor(), { alpha: 0.2 }),
                 }}
                 compact
-                size="xl"
+                size="lg"
                 icon={
                   <Switch>
                     <Match when={layout() === "list"}>

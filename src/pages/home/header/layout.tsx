@@ -33,7 +33,7 @@ export const Layout = () => {
         }}
         aria-label="switch layout"
         compact
-        size="xl"
+        size="lg"
         icon={
           <Switch>
             <Match when={layout() === "list"}>
