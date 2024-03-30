@@ -43,7 +43,7 @@ export const BackTop = () => {
             outline: "none",
           }}
           cursor="pointer"
-          boxSize="$9"
+          boxSize="$8"
           p="$1"
           rounded="$lg"
           as={CgChevronDoubleUpO}
