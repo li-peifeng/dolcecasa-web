@@ -2,6 +2,7 @@ import { VStack } from "@hope-ui/solid"
 import { Nav } from "./Nav"
 import { Obj } from "./Obj"
 import { Container } from "./Container"
+import { Readme } from "./Readme"
 import { Sidebar } from "./Sidebar"
 
 export const Body = () => {
@@ -18,6 +19,10 @@ export const Body = () => {
       >
         <Nav />
         <Obj />
+        <Readme
+          files={["readme.md", "footer.md", "bottom.md"]}
+          fromMeta="readme"
+        />
         <Sidebar />
       </VStack>
     </Container>
