@@ -31,7 +31,7 @@ export const players: { icon: string; name: string; scheme: string }[] = [
     scheme:
       "intent:$durl#Intent;package=com.mxtech.videoplayer.pro;S.title=$name;end",
   },
-  { icon: "iina", name: "IINA", scheme: "iina://weblink?url=$durl" },
+  { icon: "iina", name: "IINA", scheme: "iina://weblink?url=$edurl" },
 ]
 
 export const AutoHeightPlugin = (player: Artplayer) => {
