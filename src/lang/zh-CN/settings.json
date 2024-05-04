@@ -102,6 +102,7 @@
   "s3_access_key_id": "S3 访问密钥ID",
   "s3_buckets": "S3 存储桶",
   "s3_enabled": "S3 启用",
+  "s3_generate": "生成 S3 密钥",
   "s3_secret_access_key": "S3 秘密访问密钥",
   "s3_restart_to_apply": "重启 S3 来应用更改"
 }
