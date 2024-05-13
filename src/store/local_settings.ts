@@ -19,7 +19,7 @@ export const initialLocalSettings = [
   },
   {
     key: "global_default_layout",
-    default: "grid",
+    default: "list",
     type: "select",
     options: ["list", "grid", "image"],
   },
