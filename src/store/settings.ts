@@ -8,7 +8,7 @@ export const setSettings = (items: Record<string, string>) => {
   })
   const version = settings["version"] || "Unknown"
   console.log(
-    `%c Sweet • Cloud %c ${version} %c https://github.com/li-peifeng/sweetcloud`,
+    `%c Sweet • Cloud %c ${version} %c https://github.com/li-peifeng/Sweet-Cloud`,
     "color: #fff; background: #5f5f5f",
     "color: #fff; background: #70c6be",
     "",
