@@ -4,7 +4,7 @@
 
 ## Docker
 
-docker pull leolitaly/Sweet-Cloud:latest
+docker pull leolitaly/sweet-cloud:latest
 
 预览图
 
