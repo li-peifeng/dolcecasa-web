@@ -157,12 +157,12 @@
   },
   "footer": {
     "powered_by": "PeiFeng.Li",
-    "manage": "DolceCasa",
-    "guest": "DolceCasa"
+    "manage": "Sweet • Cloud",
+    "guest": "Sweet • Cloud"
   },
   "search": {
     "search": "Search",
-    "no_result": "No result yet",
+    "no_result": "Sweet • Search",
     "scopes": {
       "all": "All",
       "folder": "Folder",
