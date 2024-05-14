@@ -1,5 +1,5 @@
 # replace version
-cd dolcecasa-web
+cd sweetcloud-web
 version=$(git describe --abbrev=0 --tags)
 sed -i -e "s/2024.0.0/$version/g" package.json
 cat package.json
@@ -12,7 +12,7 @@ cp -r dist ../
 cd ..
 
 # commit to web-dist
-cd dolcecasa-dist
+cd sweetcloud-dist
 rm -rf dist
 cp -r ../dist .
 git add .
