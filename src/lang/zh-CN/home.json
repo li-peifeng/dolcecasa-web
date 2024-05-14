@@ -161,12 +161,12 @@
   },
   "footer": {
     "powered_by": "PeiFeng.Li",
-    "manage": "DolceCasa",
-    "guest": "DolceCasa"
+    "manage": "Sweet • Cloud",
+    "guest": "Sweet • Cloud"
   },
   "search": {
     "search": "搜索",
-    "no_result": "Dolce • Casa",
+    "no_result": "Sweet • Search",
     "scopes": {
       "all": "全部",
       "folder": "目录",
