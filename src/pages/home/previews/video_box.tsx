@@ -23,7 +23,7 @@ export const players: { icon: string; name: string; scheme: string }[] = [
     name: "Infuse",
     scheme: "infuse://x-callback-url/play?url=$durl",
   },
-  { icon: "nplayer", name: "nPlayer", scheme: "nplayer://$durl" },
+  { icon: "nplayer", name: "nPlayer", scheme: "nplayer-$durl" },
   { icon: "potplayer", name: "PotPlayer", scheme: "potplayer://$durl" },
   {
     icon: "mxplayer-pro",
