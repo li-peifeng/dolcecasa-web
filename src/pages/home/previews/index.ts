@@ -21,7 +21,7 @@ const previews: Preview[] = [
     component: lazy(() => import("./html")),
   },
   {
-    name: "视频播放器",
+    name: "播放视频-阿里云",
     type: ObjType.VIDEO,
     provider: /^Aliyundrive(Open)?$/,
     component: lazy(() => import("./aliyun_video")),
@@ -48,17 +48,17 @@ const previews: Preview[] = [
     component: lazy(() => import("./text-editor")),
   },
   {
-    name: "图片文件",
+    name: "预览图片",
     type: ObjType.IMAGE,
     component: lazy(() => import("./image")),
   },
   {
-    name: "视频文件",
+    name: "播放视频",
     type: ObjType.VIDEO,
     component: lazy(() => import("./video")),
   },
   {
-    name: "音频文件",
+    name: "播放音频",
     type: ObjType.AUDIO,
     component: lazy(() => import("./audio")),
   },
@@ -112,7 +112,7 @@ export const getPreviews = (
   })
   // download page
   res.push({
-    name: "文件下载",
+    name: "下载文件",
     component: lazy(() => import("./download")),
   })
   return res
