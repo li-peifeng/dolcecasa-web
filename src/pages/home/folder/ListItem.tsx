@@ -28,8 +28,8 @@ export interface Col {
 }
 
 export const cols: Col[] = [
-  { name: "name", textAlign: "left", w: { "@initial": "76%", "@md": "50%" } },
-  { name: "size", textAlign: "right", w: { "@initial": "24%", "@md": "17%" } },
+  { name: "name", textAlign: "left", w: { "@initial": "74%", "@md": "47%" } },
+  { name: "size", textAlign: "right", w: { "@initial": "26%", "@md": "20%" } },
   { name: "modified", textAlign: "right", w: { "@initial": 0, "@md": "33%" } },
 ]
 
