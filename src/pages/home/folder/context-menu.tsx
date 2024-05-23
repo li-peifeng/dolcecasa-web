@@ -27,7 +27,8 @@ export const ContextMenu = () => {
   const t = useT()
   const { colorMode } = useColorMode()
   const { copySelectedRawLink, copySelectedPreviewPage } = useCopyLink()
-  const { batchDownloadSelected } = useDownload()
+  const { batchDownloadSelected, sendToAria2, playlist_download } =
+    useDownload()
   const canPackageDownload = () => {
     return UserMethods.is_admin(me()) || getSettingBool("package_download")
   }
@@ -81,12 +82,35 @@ export const ContextMenu = () => {
         </Item>
       </Show>
       <Show when={!oneChecked() && haveSelected()}>
-        <Item onClick={copySelectedPreviewPage}>
-          <ItemContent name="copy_link" />
-        </Item>
-        <Item onClick={batchDownloadSelected}>
-          <ItemContent name="download" />
-        </Item>
+        <Submenu label={<ItemContent name="copy_link" />}>
+          <Item onClick={copySelectedPreviewPage}>
+            {t("home.toolbar.preview_page")}
+          </Item>
+          <Item onClick={() => copySelectedRawLink()}>
+            {t("home.toolbar.down_link")}
+          </Item>
+          <Item onClick={() => copySelectedRawLink(true)}>
+            {t("home.toolbar.encode_down_link")}
+          </Item>
+        </Submenu>
+        <Submenu label={<ItemContent name="download" />}>
+          <Item onClick={batchDownloadSelected}>
+            {t("home.toolbar.batch_download")}
+          </Item>
+          <Show
+            when={
+              UserMethods.is_admin(me()) || getSettingBool("package_download")
+            }
+          >
+            <Item onClick={() => bus.emit("tool", "package_download")}>
+              {t("home.toolbar.package_download")}
+            </Item>
+            <Item onClick={playlist_download}>
+              {t("home.toolbar.playlist_download")}
+            </Item>
+          </Show>
+          <Item onClick={sendToAria2}>{t("home.toolbar.send_aria2")}</Item>
+        </Submenu>
       </Show>
     </Menu>
   )
