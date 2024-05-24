@@ -28,12 +28,12 @@ const previews: Preview[] = [
     component: lazy(() => import("./aliyun_video")),
   },
   {
-    name: "Markdown",
+    name: "Markdown 预览",
     type: ObjType.TEXT,
     component: lazy(() => import("./markdown")),
   },
   {
-    name: "MD 自动换行",
+    name: "Markdown 预览 + 自动换行",
     type: ObjType.TEXT,
     component: lazy(() => import("./markdown_with_word_wrap")),
   },
@@ -117,7 +117,7 @@ export const getPreviews = (
   })
   // download page
   res.push({
-    name: "文件下载",
+    name: "下载文件",
     component: lazy(() => import("./download")),
   })
   return res
