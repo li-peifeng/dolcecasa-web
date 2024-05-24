@@ -64,6 +64,7 @@
     "batch_download": "批量下载",
     "package_download": "打包下载",
     "package_download_disabled": "打包下载已禁用",
+    "playlist_download": "下载播放列表",
     "send_aria2": "发送到 Aria2",
     "aria2_not_set": "请设置 Aria2 RPC 网址",
     "aria2_set_error": "任务发送失败，请检查配置",
