@@ -197,8 +197,15 @@
   background-color: #ffffff00 !important;
 }
 
-.hope-select__content.hope-c-XJURY.hope-c-PJLV.hope-c-PJLV-ijpihTg-css {
-  background-color: #ffffff00 !important;
+.hope-ui-light
+  .hope-select__content.hope-c-XJURY.hope-c-PJLV.hope-c-PJLV-ijpihTg-css {
+  background-color: #ffffff59 !important;
+  backdrop-filter: blur(15px) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
+}
+.hope-ui-dark
+  .hope-select__content.hope-c-XJURY.hope-c-PJLV.hope-c-PJLV-ijpihTg-css {
+  background-color: #00000059 !important;
   backdrop-filter: blur(15px) !important;
   -webkit-backdrop-filter: blur(15px) !important;
 }
@@ -302,13 +309,13 @@
 }
 
 .hope-c-PJLV.hope-c-PJLV-iciJSBF-css {
-  background-color: #ffffff80;
-  border-radius: 10px;
+  background-color: #ffffff80 !important;
+  border-radius: 10px !important;
 }
 
 .hope-ui-dark .hope-c-PJLV.hope-c-PJLV-iciJSBF-css {
-  background-color: #00000000;
-  border-radius: 10px;
+  background-color: #00000000 !important;
+  border-radius: 10px !important;
 }
 
 .hope-ui-light .hope-c-PJLV-ijgzmFG-css {
@@ -327,17 +334,17 @@
   background-color: #00000000 !important;
   backdrop-filter: blur(15px) !important;
   -webkit-backdrop-filter: blur(15px) !important;
-  border-radius: 10px;
+  border-radius: 10px !important;
 }
 
 .hope-ui-light .hope-c-PJLV-ijIbXvT-css {
-  background-color: #ffffff00;
-  border-radius: 10px;
+  background-color: #ffffff00 !important;
+  border-radius: 10px !important;
 }
 
 .hope-ui-dark .hope-c-PJLV-ijrHllL-css {
-  background-color: #00000000;
-  border-radius: 10px;
+  background-color: #00000000 !important;
+  border-radius: 10px !important;
 }
 
 .hope-c-PJLV-idwKBiq-css {
@@ -366,7 +373,7 @@
 
 .lg-outer .lg-item.lg-complete.lg-zoomable .lg-image,
 .lg-outer .lg-item.lg-complete.lg-zoomable .lg-dummy-img {
-  border-radius: 10px;
+  border-radius: 10px !important;
 }
 
 .lg-sub-html {

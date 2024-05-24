@@ -22,7 +22,7 @@ const previews: Preview[] = [
     component: lazy(() => import("./html")),
   },
   {
-    name: "视频播放器",
+    name: "阿里云视频播放",
     type: ObjType.VIDEO,
     provider: /^Aliyundrive(Open)?$/,
     component: lazy(() => import("./aliyun_video")),
@@ -43,23 +43,23 @@ const previews: Preview[] = [
     component: lazy(() => import("./url")),
   },
   {
-    name: "Text 编辑器",
+    name: "TXT 预览",
     type: ObjType.TEXT,
     exts: ["url"],
     component: lazy(() => import("./text-editor")),
   },
   {
-    name: "图片文件",
+    name: "图片预览",
     type: ObjType.IMAGE,
     component: lazy(() => import("./image")),
   },
   {
-    name: "视频文件",
+    name: "播放视频",
     type: ObjType.VIDEO,
     component: lazy(() => import("./video")),
   },
   {
-    name: "音频文件",
+    name: "播放音乐",
     type: ObjType.AUDIO,
     component: lazy(() => import("./audio")),
   },
