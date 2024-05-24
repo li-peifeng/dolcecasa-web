@@ -59,7 +59,9 @@
   "robots_txt": "Robots.txt",
   "s3_access_key_id": "S3 访问密钥 id",
   "s3_buckets": "S3 桶",
+  "s3_generate": "S3 生成密钥",
   "s3_secret_access_key": "S3 访问密钥",
+  "s3_restart_to_apply": "重启来应用设置",
   "search_index": "搜索索引",
   "search_indexs": {
     "bleve": "Bleve",
