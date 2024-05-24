@@ -41,6 +41,6 @@
     "start_load_success": "开始加载",
     "load_all": "全部重新加载",
     "filter_by_driver": "按驱动筛选",
-    "table_layout": "表格布局"
+    "table_layout": "视图"
   }
 }

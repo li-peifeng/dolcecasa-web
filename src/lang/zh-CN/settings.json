@@ -19,7 +19,7 @@
   "home_container": "主容器",
   "home_containers": {
     "hope_container": "Hope 容器",
-    "max_980px": "最大 980px"
+    "max_980px": "最大 1920px"
   },
   "home_icon": "首页图标",
   "iframe_previews": "Iframe 预览",
@@ -46,10 +46,10 @@
   "package_download": "打包下载",
   "pagination_type": "分页类型",
   "pagination_types": {
-    "all": "全部",
-    "auto_load_more": "自动加载更多",
+    "all": "全部显示",
+    "auto_load_more": "自动加载",
     "load_more": "加载更多",
-    "pagination": "分页"
+    "pagination": "分页显示"
   },
   "privacy_regs": "隐私内容正则表达式",
   "proxy_ignore_headers": "代理忽略头部",

@@ -40,7 +40,7 @@
   "connect_sso": "绑定单点登录平台",
   "disconnect_sso": "解绑单点登录平台",
   "webauthn": "WebAuthn",
-  "add_webauthn": "添加Webauthn 凭据",
+  "add_webauthn": "添加 Webauthn 凭据",
   "add_webauthn_success": "Webauthn 凭据添加成功！",
-  "webauthn_not_supported": "您的浏览器不支持Webauth，或者您的Origin不安全"
+  "webauthn_not_supported": "您的浏览器不支持 Webauth 或者您的 Origin 不安全"
 }
