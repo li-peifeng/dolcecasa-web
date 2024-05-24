@@ -72,6 +72,7 @@
     "valid_duration-tips": "分钟"
   },
   "123PanShare": {
+    "accesstoken": "访问令牌",
     "order_by": "排序",
     "order_bys": {
       "file_name": "文件名称",
@@ -107,6 +108,7 @@
   },
   "189CloudPC": {
     "family_id": "Family id",
+    "family_transfer": "家庭转移",
     "no_use_ocr": "不使用OCR",
     "order_by": "排序",
     "order_bys": {
@@ -146,6 +148,7 @@
   },
   "AList V3": {
     "meta_password": "元信息密码",
+    "pass_ua_to_upsteam": "传递UA至上游",
     "password": "密码",
     "root_folder_path": "根文件夹路径",
     "token": "令牌",
@@ -153,7 +156,9 @@
     "username": "用户名"
   },
   "Alias": {
-    "paths": "路径"
+    "paths": "路径",
+    "protect_same_name": "保护同名",
+    "protect_same_name-tips": "保护同名的文件不被删除或重命名"
   },
   "Aliyundrive": {
     "internal_upload": "内部上传",
@@ -236,6 +241,8 @@
     "client_id": "客户端ID",
     "client_secret": "客户端密钥",
     "custom_crack_ua": "自定义破解ua",
+    "custom_upload_part_size": "自定义上传分片大小",
+    "custom_upload_part_size-tips": "0 表示根据VIP等级对应大小",
     "download_api": "下载接口",
     "download_apis": {
       "crack": "非官方",
@@ -327,6 +334,28 @@
     "thumbnail": "缩略图",
     "thumbnail-tips": "启用在缩略图文件夹下预先生成的缩略图"
   },
+  "Doge": {
+    "access_key_id": "访问密钥 Id",
+    "add_filename_to_disposition": "添加filename到disposition",
+    "add_filename_to_disposition-tips": "添加filename到Content-Disposition头中。",
+    "bucket": "存储桶",
+    "custom_host": "自定义HOST",
+    "endpoint": "Endpoint",
+    "force_path_style": "强制路径样式",
+    "list_object_version": "列出对象版本",
+    "list_object_versions": {
+      "v1": "V1",
+      "v2": "V2"
+    },
+    "placeholder": "占位文件名",
+    "region": "地区",
+    "remove_bucket": "移除bucket",
+    "remove_bucket-tips": "使用自定义主机时从路径中删除bucket名称。",
+    "root_folder_path": "根文件夹路径",
+    "secret_access_key": "安全访问密钥",
+    "session_token": "会话令牌",
+    "sign_url_expire": "签名链接有效期"
+  },
   "Dropbox": {
     "client_id": "客户端ID",
     "client_id-tips": "如果你没有，请留空",
@@ -399,6 +428,17 @@
       "url": "链接"
     }
   },
+  "Lark": {
+    "app_id": "App ID",
+    "app_id-tips": "App ID",
+    "app_secret": "App Secret\n",
+    "app_secret-tips": "App Secret",
+    "external_mode": "外部预览模式",
+    "external_mode-tips": "打开后复制飞书链接，可跳转到飞书网页预览",
+    "root_folder_path": "根文件夹路径",
+    "tenant_url_prefix": "租户网址前缀",
+    "tenant_url_prefix-tips": "租户地址前缀"
+  },
   "Local": {
     "mkdir_perm": "创建文件夹权限",
     "recycle_bin_path": "回收站路径",
@@ -424,7 +464,11 @@
   },
   "Mega_nz": {
     "email": "邮箱",
-    "password": "密码"
+    "password": "密码",
+    "two_fa_code": "两步验证代码",
+    "two_fa_code-tips": "2FA 6位数字代码，仅填写2FA 代码将不支持重载驱动程序",
+    "two_fa_secret": "两步验证秘钥",
+    "two_fa_secret-tips": "双因素身份验证秘钥"
   },
   "MoPan": {
     "cloud_id": "Cloud id",
@@ -443,8 +487,15 @@
     "password": "密码",
     "phone": "手机号码",
     "root_folder_id": "根文件夹ID",
+    "sms_code": "短信验证码",
+    "sms_code-tips": "输入 'send' 发送短信",
     "upload_thread": "上传线程",
     "upload_thread-tips": "1<=线程<=32"
+  },
+  "NeteaseMusic": {
+    "cookie": "Cookie",
+    "song_limit": "歌曲获取上限",
+    "song_limit-tips": "默认只获取 200 首歌曲"
   },
   "Onedrive": {
     "chunk_size": "分片大小",
@@ -483,12 +534,16 @@
     "tenant_id": "租户 ID"
   },
   "PikPak": {
+    "client_id": "客户端ID",
+    "client_secret": "客户端密钥",
     "disable_media_link": "禁用媒体链接",
     "password": "密码",
     "root_folder_id": "根文件夹ID",
     "username": "用户名"
   },
   "PikPakShare": {
+    "client_id": "客户端ID",
+    "client_secret": "客户端密钥",
     "password": "密码",
     "root_folder_id": "根文件夹ID",
     "share_id": "分享ID",
@@ -512,8 +567,8 @@
     "root_folder_id": "根文件夹ID"
   },
   "Quqi": {
-    "cdn": "Cdn",
-    "cdn-tips": "If you enable this option, the download speed can be increased, but there will be some performance loss",
+    "cdn": "CDN",
+    "cdn-tips": "如果您启用此选项，下载速度可以提高，但将会有一些性能损失",
     "cookie": "Cookie",
     "cookie-tips": "Cookie 可以同时用于多个客户端",
     "password": "密码",
@@ -544,6 +599,7 @@
   },
   "SFTP": {
     "address": "地址",
+    "ignore_symlink_error": "忽略软链接错误",
     "password": "密码",
     "private_key": "私钥",
     "root_folder_path": "根文件夹路径",
@@ -560,7 +616,9 @@
     "address": "地址",
     "password": "密码",
     "repoId": "RepoId",
+    "repoPwd": "仓库密码",
     "root_folder_path": "根文件夹路径",
+    "token": "令牌",
     "username": "用户名"
   },
   "Teambition": {
@@ -613,6 +671,47 @@
     "username": "用户名"
   },
   "ThunderExpert": {
+    "algorithms": "算法",
+    "algorithms-tips": "签名类型是用户名,此为必填项",
+    "captcha_sign": "验证码签名",
+    "captcha_sign-tips": "签名类型是验证码签名,此为必填项",
+    "captcha_token": "验证码",
+    "client_id": "客户端ID",
+    "client_secret": "客户端密钥",
+    "client_version": "客户端版本",
+    "device_id": "设备id",
+    "download_user_agent": "下载用户代理",
+    "login_type": "登录类型",
+    "login_types": {
+      "refresh_token": "刷新令牌",
+      "user": "用户名"
+    },
+    "package_name": "包名",
+    "password": "密码",
+    "password-tips": "登录类型是用户名,此为必填项",
+    "refresh_token": "刷新令牌",
+    "refresh_token-tips": "登录类型是刷新令牌,此为必填项",
+    "root_folder_id": "根文件夹ID",
+    "sign_type": "签名类型",
+    "sign_types": {
+      "algorithms": "算法",
+      "captcha_sign": "验证码签名"
+    },
+    "timestamp": "时间戳",
+    "timestamp-tips": "签名类型是验证码签名,此为必填项",
+    "use_video_url": "使用视频url",
+    "user_agent": "用户代理",
+    "username": "用户名",
+    "username-tips": "登录类型是用户名,此为必填项"
+  },
+  "ThunderX": {
+    "captcha_token": "验证码",
+    "password": "密码",
+    "root_folder_id": "根文件夹ID",
+    "use_video_url": "使用视频url",
+    "username": "用户名"
+  },
+  "ThunderXExpert": {
     "algorithms": "算法",
     "algorithms-tips": "签名类型是用户名,此为必填项",
     "captcha_sign": "验证码签名",
@@ -795,6 +894,7 @@
     "ChaoXingGroupDrive": {},
     "Cloudreve": {},
     "Crypt": {},
+    "Doge": {},
     "Dropbox": {},
     "FTP": {},
     "FeijiPan": {},
@@ -803,12 +903,14 @@
     "ILanZou": {},
     "IPFS API": {},
     "Lanzou": {},
+    "Lark": {},
     "Local": {},
     "MediaTrack": {},
     "Mega_nz": {},
     "MoPan": {
       "alert": "这个网盘可能将您的密码以明文存储，请小心设置您的密码"
     },
+    "NeteaseMusic": {},
     "Onedrive": {},
     "OnedriveAPP": {},
     "PikPak": {},
@@ -823,6 +925,8 @@
     "Terabox": {},
     "Thunder": {},
     "ThunderExpert": {},
+    "ThunderX": {},
+    "ThunderXExpert": {},
     "Trainbit": {},
     "UC": {},
     "USS": {},
@@ -855,6 +959,7 @@
     "ChaoXingGroupDrive": "超星小组盘",
     "Cloudreve": "Cloudreve",
     "Crypt": "Crypt",
+    "Doge": "多吉云",
     "Dropbox": "Dropbox",
     "FTP": "FTP",
     "FeijiPan": "飞机盘",
@@ -863,10 +968,12 @@
     "ILanZou": "蓝奏云优享版",
     "IPFS API": "IPFS API",
     "Lanzou": "蓝奏云",
+    "Lark": "Lark (飞书)",
     "Local": "本机存储",
     "MediaTrack": "分秒帧",
     "Mega_nz": "Mega 网盘",
     "MoPan": "魔盘",
+    "NeteaseMusic": "网易云音乐",
     "Onedrive": "Onedrive",
     "OnedriveAPP": "OnedriveAPP",
     "PikPak": "PikPak",
@@ -881,6 +988,8 @@
     "Terabox": "Terabox",
     "Thunder": "迅雷",
     "ThunderExpert": "迅雷专家版",
+    "ThunderX": "迅雷X",
+    "ThunderXExpert": "迅雷X专家版",
     "Trainbit": "Trainbit",
     "UC": "UC",
     "USS": "又拍云存储",
