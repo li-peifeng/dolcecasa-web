@@ -1,6 +1,6 @@
 {
   "sidemenu": {
-    "dashboard": "控制面板",
+    "dashboard": "Sweet • Cloud",
     "settings": "设置",
     "site": "站点",
     "style": "样式",
@@ -25,7 +25,7 @@
     "s3": "S3"
   },
   "title": "Sweet • Cloud",
-  "not_admin": "您不是管理员用户，请使用管理员帐户登录。",
+  "not_admin": "请使用管理员帐户登录",
   "logout_success": "退出成功",
   "send": "发送",
   "receive": "接收",
