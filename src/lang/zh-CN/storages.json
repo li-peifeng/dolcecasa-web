@@ -12,6 +12,8 @@
     "down_proxy_url": "下载代理URL",
     "web_proxy": "Web 代理",
     "webdav_policy": "WebDAV 策略",
+    "proxy_range": "代理range",
+    "proxy_range-tips": "需要启用代理",
     "webdav_policys": {
       "302_redirect": "302 重定向",
       "use_proxy_url": "使用代理地址",
@@ -39,6 +41,6 @@
     "start_load_success": "开始加载",
     "load_all": "全部重新加载",
     "filter_by_driver": "按驱动筛选",
-    "table_layout": "视图"
+    "table_layout": "表格布局"
   }
 }

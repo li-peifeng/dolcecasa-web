@@ -19,7 +19,7 @@
   "home_container": "主容器",
   "home_containers": {
     "hope_container": "Hope 容器",
-    "max_980px": "最大 1920px"
+    "max_980px": "最大 980px"
   },
   "home_icon": "首页图标",
   "iframe_previews": "Iframe 预览",
@@ -46,10 +46,10 @@
   "package_download": "打包下载",
   "pagination_type": "分页类型",
   "pagination_types": {
-    "all": "全部显示",
-    "auto_load_more": "自动加载",
+    "all": "全部",
+    "auto_load_more": "自动加载更多",
     "load_more": "加载更多",
-    "pagination": "分页显示"
+    "pagination": "分页"
   },
   "privacy_regs": "隐私内容正则表达式",
   "proxy_ignore_headers": "代理忽略头部",
@@ -57,12 +57,15 @@
   "qbittorrent_seedtime": "qBittorrent 做种时间",
   "qbittorrent_url": "qBittorrent链接",
   "robots_txt": "Robots.txt",
+  "s3_access_key_id": "S3 访问密钥 id",
+  "s3_buckets": "S3 桶",
+  "s3_secret_access_key": "S3 访问密钥",
   "search_index": "搜索索引",
   "search_indexs": {
     "bleve": "Bleve",
     "database": "数据库",
     "database_non_full_text": "数据库（非全文搜索）",
-    "meilisearch": "Meilisearch",
+    "meilisearch": "Meilissearch",
     "none": "无"
   },
   "settings_layout": "设置布局",
@@ -98,11 +101,5 @@
   "version": "版本",
   "video_autoplay": "自动播放视频",
   "video_types": "视频类型",
-  "webauthn_login_enabled": "启用Webauthn登录",
-  "s3_access_key_id": "S3 访问密钥ID",
-  "s3_buckets": "S3 存储桶",
-  "s3_enabled": "S3 启用",
-  "s3_generate": "生成 S3 密钥",
-  "s3_secret_access_key": "S3 秘密访问密钥",
-  "s3_restart_to_apply": "重启 S3 来应用更改"
+  "webauthn_login_enabled": "启用Webauthn登录"
 }
