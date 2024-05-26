@@ -226,18 +226,6 @@
   background-color: #00000000 !important;
 }
 
-.solid-contextmenu.solid-contextmenu__theme--light {
-  background-color: #ffffff00 !important;
-  backdrop-filter: blur(15px) !important;
-  -webkit-backdrop-filter: blur(15px) !important;
-}
-
-.solid-contextmenu.solid-contextmenu__theme--dark {
-  background-color: #00000000 !important;
-  backdrop-filter: blur(15px) !important;
-  -webkit-backdrop-filter: blur(15px) !important;
-}
-
 .hope-ui-light .hope-c-kvTTWD-hYRNAb-variant-filled {
   background-color: #ffffff50 !important;
 }
