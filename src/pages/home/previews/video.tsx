@@ -64,7 +64,7 @@ const Preview = () => {
     pip: true,
     mutex: true,
     fullscreen: true,
-    fullscreenWeb: true,
+    fullscreenWeb: false,
     subtitleOffset: true,
     miniProgressBar: false,
     playsInline: true,
@@ -128,7 +128,7 @@ const Preview = () => {
     },
     lang: ["en", "zh-cn", "zh-tw"].includes(currentLang().toLowerCase())
       ? (currentLang().toLowerCase() as string)
-      : "en",
+      : "zh-cn",
     lock: true,
     fastForward: true,
     autoPlayback: true,
