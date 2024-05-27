@@ -6,22 +6,7 @@ on:
       - "*"
 
 jobs:
-  changelog:
-    name: Create release changelog
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Generate changelog
-        run: npx changelogithub # or changelogithub@0.12 if ensure the stable result
-        env:
-          GITHUB_TOKEN: ${{secrets.MY_TOKEN}}
-
   release:
-    needs: changelog
     strategy:
       matrix:
         platform: [ubuntu-latest]
