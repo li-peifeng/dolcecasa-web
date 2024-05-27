@@ -1,11 +1,19 @@
 import { Box, HStack, useColorModeValue } from "@hope-ui/solid"
 import { createMemo, For, Show } from "solid-js"
-import { checkboxOpen, haveSelected, objStore, selectAll, State } from "~/store"
+import {
+  checkboxOpen,
+  haveSelected,
+  objStore,
+  selectAll,
+  State,
+  me,
+} from "~/store"
 import { CopyLink } from "./CopyLink"
 import { CenterIcon } from "./Icon"
 import { bus } from "~/utils"
 import { Download } from "./Download"
 import { Motion, Presence } from "@motionone/solid"
+import { UserMethods } from "~/types"
 
 export const Center = () => {
   const show = createMemo(
@@ -16,7 +24,7 @@ export const Center = () => {
   )
   return (
     <Presence exitBeforeEnter>
-      <Show when={show()}>
+      <Show when={show() && UserMethods.is_admin(me())}>
         <Box
           class="center-toolbar"
           pos="fixed"

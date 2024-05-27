@@ -7,7 +7,7 @@ import {
 import { createMemo, Show } from "solid-js"
 import { RightIcon } from "./Icon"
 import { TbCheckbox } from "solid-icons/tb"
-import { objStore, State, toggleCheckbox, userCan } from "~/store"
+import { objStore, State, toggleCheckbox, userCan, me } from "~/store"
 import { bus } from "~/utils"
 import { operations } from "./operations"
 import { IoMagnetOutline } from "solid-icons/io"
@@ -18,6 +18,7 @@ import { Motion } from "@motionone/solid"
 import { isTocVisible, setTocDisabled } from "~/components"
 import { BiSolidBookContent } from "solid-icons/bi"
 import { VsHeart } from "solid-icons/vs"
+import { UserMethods } from "~/types"
 
 export const Right = () => {
   const { isOpen, onToggle } = createDisclosure({
@@ -135,18 +136,20 @@ export const Right = () => {
                 })
               }}
             />
-            <RightIcon
-              tips="toggle_checkbox"
-              as={TbCheckbox}
-              onClick={toggleCheckbox}
-            />
-            <RightIcon
-              as={AiOutlineSetting}
-              tips="browser_setting"
-              onClick={() => {
-                bus.emit("tool", "local_settings")
-              }}
-            />
+            <Show when={UserMethods.is_admin(me())}>
+              <RightIcon
+                tips="toggle_checkbox"
+                as={TbCheckbox}
+                onClick={toggleCheckbox}
+              />
+              <RightIcon
+                as={AiOutlineSetting}
+                tips="browser_setting"
+                onClick={() => {
+                  bus.emit("tool", "local_settings")
+                }}
+              />
+            </Show>
           </VStack>
           <RightIcon tips="close" as={VsHeart} onClick={onToggle} />
         </VStack>
