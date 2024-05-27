@@ -670,6 +670,60 @@
     "root_folder_id": "根文件夹ID",
     "username": "用户名"
   },
+  "ThunderBrowser": {
+    "captcha_token": "验证码",
+    "password": "密码",
+    "remove_way": "移除方式",
+    "remove_ways": {
+      "delete": "删除",
+      "trash": "回收站"
+    },
+    "root_folder_id": "根文件夹ID",
+    "safe_password": "Safe password",
+    "use_video_url": "使用视频url",
+    "username": "用户名"
+  },
+  "ThunderBrowserExpert": {
+    "algorithms": "算法",
+    "algorithms-tips": "签名类型是用户名,此为必填项",
+    "captcha_sign": "验证码签名",
+    "captcha_sign-tips": "签名类型是验证码签名,此为必填项",
+    "captcha_token": "验证码",
+    "client_id": "客户端ID",
+    "client_secret": "客户端密钥",
+    "client_version": "客户端版本",
+    "device_id": "设备id",
+    "download_user_agent": "下载用户代理",
+    "login_type": "登录类型",
+    "login_types": {
+      "refresh_token": "刷新令牌",
+      "user": "用户名"
+    },
+    "package_name": "包名",
+    "password": "密码",
+    "password-tips": "登录类型是用户名,此为必填项",
+    "refresh_token": "刷新令牌",
+    "refresh_token-tips": "登录类型是刷新令牌,此为必填项",
+    "remove_way": "移除方式",
+    "remove_ways": {
+      "delete": "删除",
+      "trash": "回收站"
+    },
+    "root_folder_id": "根文件夹ID",
+    "safe_password": "Safe password",
+    "safe_password-tips": "登录类型是用户名,此为必填项",
+    "sign_type": "签名类型",
+    "sign_types": {
+      "algorithms": "算法",
+      "captcha_sign": "验证码签名"
+    },
+    "timestamp": "时间戳",
+    "timestamp-tips": "签名类型是验证码签名,此为必填项",
+    "use_video_url": "使用视频url",
+    "user_agent": "用户代理",
+    "username": "用户名",
+    "username-tips": "登录类型是用户名,此为必填项"
+  },
   "ThunderExpert": {
     "algorithms": "算法",
     "algorithms-tips": "签名类型是用户名,此为必填项",
@@ -924,6 +978,8 @@
     "Teambition": {},
     "Terabox": {},
     "Thunder": {},
+    "ThunderBrowser": {},
+    "ThunderBrowserExpert": {},
     "ThunderExpert": {},
     "ThunderX": {},
     "ThunderXExpert": {},
@@ -987,6 +1043,8 @@
     "Teambition": "Teambition网盘",
     "Terabox": "Terabox",
     "Thunder": "迅雷",
+    "ThunderBrowser": "ThunderBrowser",
+    "ThunderBrowserExpert": "ThunderBrowserExpert",
     "ThunderExpert": "迅雷专家版",
     "ThunderX": "迅雷X",
     "ThunderXExpert": "迅雷X专家版",
