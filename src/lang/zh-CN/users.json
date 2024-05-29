@@ -42,5 +42,5 @@
   "webauthn": "WebAuthn",
   "add_webauthn": "添加 Webauthn 凭据",
   "add_webauthn_success": "Webauthn 凭据添加成功！",
-  "webauthn_not_supported": "您的浏览器不支持或不安全"
+  "webauthn_not_supported": "浏览器不支持或不安全"
 }
