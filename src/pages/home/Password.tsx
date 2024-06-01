@@ -45,14 +45,7 @@ const Password = () => {
           direction={{ "@initial": "column", "@sm": "row" }}
           columnGap="$1"
         >
-          <Text>{t("global.have_account")}</Text>
-          <Text
-            color="$info9"
-            as={LinkWithBase}
-            href={`/@tiamo?redirect=${encodeURIComponent(location.pathname)}`}
-          >
-            {t("global.go_login")}
-          </Text>
+          <Text>未经授权，不得进入！</Text>
         </Flex>
         <HStack spacing="$2">
           <Button colorScheme="neutral" onClick={back}>
