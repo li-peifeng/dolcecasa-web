@@ -36,11 +36,11 @@ dependencies:
     specifier: ^1.10.1
     version: 1.10.1
   artplayer:
-    specifier: ^5.1.1
-    version: 5.1.1
+    specifier: ^5.1.3
+    version: 5.1.3
   artplayer-plugin-danmuku:
-    specifier: ^5.0.1
-    version: 5.0.1
+    specifier: ^5.1.0
+    version: 5.1.0
   asciinema-player:
     specifier: ^3.6.3
     version: 3.6.3
@@ -929,12 +929,12 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /artplayer-plugin-danmuku@5.0.1:
-    resolution: {integrity: sha512-b6/Y4/+X0rNmnqS5+zzQgow+WW4iVT8eFv4LAUzJgIyORIcf5Gn00Dy0PZ+kwGb1VJy0CUCRK6gVVvh0tWsRAg==}
+  /artplayer-plugin-danmuku@5.1.0:
+    resolution: {integrity: sha512-F2dGt8nmSrAkGGNoKErrPipNqW8OueTYsE/Yh8Cze8oSWSHpXnaZbhqkg5ZFtLCNp85/MHrU0OUv3+D4wKmYGA==}
     dev: false
 
-  /artplayer@5.1.1:
-    resolution: {integrity: sha512-pZ2/lB+Oo3g0CVLqkFuB86bMBPMtZaABaq5e1LPKubYDBW46+mzin2wzdVmk3tvFyfQoVnb+MBFU7nJYvI3qNg==}
+  /artplayer@5.1.3:
+    resolution: {integrity: sha512-fhWz045JTcfikOkO9n7s3sxbZ6qLc5GrtOSB0SIwDrbwq7ZSDLfmj4l/VAxtpdK0BGtUYxBj0HeM/ISEtv97hw==}
     dependencies:
       option-validator: 2.0.6
     dev: false
