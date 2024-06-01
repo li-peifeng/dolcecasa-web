@@ -8,9 +8,9 @@ import {
   useColorModeValue,
   VStack,
 } from "@hope-ui/solid"
-import { LinkWithBase } from "~/components"
 import { usePath, useRouter, useT } from "~/hooks"
 import { password, setPassword } from "~/store"
+import { Link } from "@solidjs/router"
 
 const Password = () => {
   const t = useT()
@@ -46,6 +46,9 @@ const Password = () => {
           columnGap="$1"
         >
           <Text>未经授权，不得进入！</Text>
+          <Text color="$info9" as={Link} href={`https://peifeng.li/messages`}>
+            获取密码
+          </Text>
         </Flex>
         <HStack spacing="$2">
           <Button colorScheme="neutral" onClick={back}>
