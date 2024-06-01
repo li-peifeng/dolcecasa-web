@@ -14,6 +14,7 @@ import {
   local,
   objStore,
   State,
+  me,
 } from "~/store"
 import { changeColor } from "seemly"
 import { CenterLoading } from "~/components"
@@ -21,7 +22,8 @@ import { Container } from "../Container"
 import { bus } from "~/utils"
 import { Layout } from "./layout"
 import { TbListSearch } from "solid-icons/tb"
-
+import { Link } from "@solidjs/router"
+import { UserMethods } from "~/types"
 export const Header = () => {
   const logos = getSetting("logo").split("\n")
   const logo = useColorModeValue(logos[0], logos.pop())
@@ -50,7 +52,12 @@ export const Header = () => {
           w="$full"
           justifyContent="space-between"
         >
-          <HStack class="header-left" h="52px">
+          <HStack
+            class="header-left"
+            h="52px"
+            as={Link}
+            href={UserMethods.is_guest(me()) ? "/@tiamo" : "/@amore"}
+          >
             <Image
               src={logo()!}
               h="$full"
