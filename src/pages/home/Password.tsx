@@ -45,8 +45,8 @@ const Password = () => {
           direction={{ "@initial": "column", "@sm": "row" }}
           columnGap="$1"
         >
-          <Text color="$info9" as={Link} href={`https://peifeng.li/messages`}>
-            点此获取密码
+          <Text color="$info9" as={Link} href={`https://peifeng.li/password`}>
+            获取授权
           </Text>
         </Flex>
         <HStack spacing="$2">
