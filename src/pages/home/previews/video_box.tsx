@@ -39,8 +39,8 @@ export const AutoHeightPlugin = (player: Artplayer) => {
   const $videoBox = $container.parentElement!
 
   player.on("ready", () => {
-    const offsetBottom = "0.75rem" // position bottom of "More" button + padding
-    $videoBox.style.maxHeight = `calc(100vh - ${$videoBox.offsetTop}px - ${offsetBottom})`
+    // const offsetBottom = "-1.75rem" // position bottom of "More" button + padding
+    $videoBox.style.maxHeight = "100vh"
     $videoBox.style.minHeight = "320px" // min width of mobie phone
     player.autoHeight()
   })
