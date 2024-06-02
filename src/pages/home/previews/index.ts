@@ -22,18 +22,18 @@ const previews: Preview[] = [
     component: lazy(() => import("./html")),
   },
   {
-    name: "阿里云视频播放",
+    name: "在线阿里视频",
     type: ObjType.VIDEO,
     provider: /^Aliyundrive(Open)?$/,
     component: lazy(() => import("./aliyun_video")),
   },
   {
-    name: "Markdown 预览",
+    name: "Markdown 在线预览",
     type: ObjType.TEXT,
     component: lazy(() => import("./markdown")),
   },
   {
-    name: "Markdown 预览 + 自动换行",
+    name: "Markdown 自动换行",
     type: ObjType.TEXT,
     component: lazy(() => import("./markdown_with_word_wrap")),
   },
@@ -43,23 +43,23 @@ const previews: Preview[] = [
     component: lazy(() => import("./url")),
   },
   {
-    name: "TXT 预览",
+    name: "TXT 在线预览",
     type: ObjType.TEXT,
     exts: ["url"],
     component: lazy(() => import("./text-editor")),
   },
   {
-    name: "图片预览",
+    name: "在线图片预览",
     type: ObjType.IMAGE,
     component: lazy(() => import("./image")),
   },
   {
-    name: "播放视频",
+    name: "在线视频播放",
     type: ObjType.VIDEO,
     component: lazy(() => import("./video")),
   },
   {
-    name: "播放音乐",
+    name: "在线播放音乐",
     type: ObjType.AUDIO,
     component: lazy(() => import("./audio")),
   },
@@ -74,13 +74,13 @@ const previews: Preview[] = [
     component: lazy(() => import("./plist")),
   },
   {
-    name: "办公文档",
+    name: "在线办公文档",
     exts: ["doc", "docx", "ppt", "pptx", "xls", "xlsx", "pdf"],
     provider: /^Aliyundrive(Share)?$/,
     component: lazy(() => import("./aliyun_office")),
   },
   {
-    name: "终端录屏",
+    name: "播放终端录屏",
     exts: ["cast"],
     component: lazy(() => import("./asciinema")),
   },
@@ -117,7 +117,7 @@ export const getPreviews = (
   })
   // download page
   res.push({
-    name: "下载文件",
+    name: "下载保存文件",
     component: lazy(() => import("./download")),
   })
   return res
