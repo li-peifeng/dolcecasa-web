@@ -25,6 +25,14 @@ export const players: { icon: string; name: string; scheme: string }[] = [
   },
   { icon: "nplayer", name: "nPlayer", scheme: "nplayer-$durl" },
   { icon: "potplayer", name: "PotPlayer", scheme: "potplayer://$durl" },
+  { icon: "vlc", name: "VLC", scheme: "vlc://$durl" },
+
+  {
+    icon: "mxplayer",
+    name: "MX Player",
+    scheme:
+      "intent:$durl#Intent;package=com.mxtech.videoplayer.ad;S.title=$name;end",
+  },
   {
     icon: "mxplayer-pro",
     name: "MX Player Pro",
@@ -39,7 +47,8 @@ export const AutoHeightPlugin = (player: Artplayer) => {
   const $videoBox = $container.parentElement!
 
   player.on("ready", () => {
-    $videoBox.style.maxHeight = "100vh"
+    const offsetBottom = "0rem" // position bottom of "More" button + padding
+    $videoBox.style.maxHeight = `calc(100vh - ${offsetBottom})`
     $videoBox.style.minHeight = "320px" // min width of mobie phone
     player.autoHeight()
   })
@@ -96,30 +105,32 @@ export const VideoBox = (props: {
           {t("home.preview.auto_next")}
         </Switch>
       </HStack>
-      <Flex wrap="wrap" gap="$1" justifyContent="center">
-        <For each={players}>
-          {(item) => {
-            return (
-              <Tooltip placement="top" withArrow label={item.name}>
-                <Anchor
-                  // external
-                  href={convertURL(item.scheme, {
-                    raw_url: objStore.raw_url,
-                    name: objStore.obj.name,
-                    d_url: currentObjLink(true),
-                  })}
-                >
-                  <Image
-                    m="0 auto"
-                    boxSize="$8"
-                    src={`${window.__dynamic_base__}/images/${item.icon}.webp`}
-                  />
-                </Anchor>
-              </Tooltip>
-            )
-          }}
-        </For>
-      </Flex>
+      <HStack>
+        <Flex wrap="wrap" gap="$1" justifyContent="center">
+          <For each={players}>
+            {(item) => {
+              return (
+                <Tooltip placement="top" withArrow label={item.name}>
+                  <Anchor
+                    // external
+                    href={convertURL(item.scheme, {
+                      raw_url: objStore.raw_url,
+                      name: objStore.obj.name,
+                      d_url: currentObjLink(true),
+                    })}
+                  >
+                    <Image
+                      m="0 auto"
+                      boxSize="$6"
+                      src={`${window.__dynamic_base__}/images/${item.icon}.webp`}
+                    />
+                  </Anchor>
+                </Tooltip>
+              )
+            }}
+          </For>
+        </Flex>
+      </HStack>
     </VStack>
   )
 }
