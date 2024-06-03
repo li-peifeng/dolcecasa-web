@@ -80,7 +80,7 @@ const Preview = () => {
     title: objStore.obj.name,
     volume: 0.5,
     autoplay: getSettingBool("video_autoplay"),
-    autoSize: true,
+    autoSize: false,
     autoMini: true,
     controls: [],
     loop: false,
