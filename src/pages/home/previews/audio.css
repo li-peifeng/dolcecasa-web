@@ -114,15 +114,19 @@
 }
 
 .hope-ui-dark .aplayer .aplayer-list ol li {
-  border-top: unset;
+  border-top: 1px solid #ffffff1a !important;
 }
 
 .aplayer .aplayer-list ol li {
-  border-top: unset;
+  border-top: 1px solid #0000001a !important;
+}
+
+.aplayer.aplayer-withlist .aplayer-info {
+  border-bottom: 1px solid #ffffff00 !important;
 }
 
 .hope-ui-dark .aplayer.aplayer-withlist .aplayer-info {
-  border-bottom: 1px solid #404040;
+  border-bottom: 1px solid #00000000 !important;
 }
 
 .hope-ui-dark .aplayer {
