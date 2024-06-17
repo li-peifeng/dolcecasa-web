@@ -47,7 +47,7 @@ jobs:
       - name: Build
         run: |
           cd Sweet-Cloud-Web
-          pnpm install
+          pnpm install --no-frozen-lockfile
           pnpm build
           cd ..
         env:
