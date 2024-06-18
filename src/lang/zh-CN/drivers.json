@@ -367,6 +367,7 @@
   },
   "FTP": {
     "address": "地址",
+    "encoding": "编码",
     "password": "密码",
     "root_folder_path": "根文件夹路径",
     "username": "用户名"
