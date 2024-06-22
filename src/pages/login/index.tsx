@@ -35,6 +35,7 @@ import {
   supported,
   CredentialRequestOptionsJSON,
 } from "@github/webauthn-json/browser-ponyfill"
+import { Link } from "@solidjs/router"
 
 const Login = () => {
   const logos = getSetting("logo").split("\n")
@@ -242,7 +243,9 @@ const Login = () => {
             >
               {t("login.remember")}
             </Checkbox>
-            <Text>{t("游客登录不需要密码哦")}</Text>
+          <Text color="$info9" as={Link} href={`https://peifeng.li/messages`}>
+            获取授权
+          </Text>
           </Flex>
         </Show>
         <HStack w="$full" spacing="$2">
