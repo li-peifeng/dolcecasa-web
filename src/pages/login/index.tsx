@@ -243,9 +243,9 @@ const Login = () => {
             >
               {t("login.remember")}
             </Checkbox>
-          <Text color="$info9" as={Link} href={`https://peifeng.li/messages`}>
-            获取授权
-          </Text>
+            <Text color="$info9" as={Link} href={`https://peifeng.li/messages`}>
+              获取授权
+            </Text>
           </Flex>
         </Show>
         <HStack w="$full" spacing="$2">
