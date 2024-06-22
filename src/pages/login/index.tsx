@@ -244,7 +244,7 @@ const Login = () => {
               {t("login.remember")}
             </Checkbox>
             <Text
-              color="$info9"
+              color="$success9"
               as={Link}
               href={`https://peifeng.li/request-account-authorization`}
             >
