@@ -243,7 +243,11 @@ const Login = () => {
             >
               {t("login.remember")}
             </Checkbox>
-            <Text color="$info9" as={Link} href={`https://peifeng.li/Request-account-authorization`}>
+            <Text
+              color="$info9"
+              as={Link}
+              href={`https://peifeng.li/Request-account-authorization`}
+            >
               获取账户访问授权
             </Text>
           </Flex>
