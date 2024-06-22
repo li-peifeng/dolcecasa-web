@@ -246,7 +246,7 @@ const Login = () => {
             <Text
               color="$info9"
               as={Link}
-              href={`https://peifeng.li/Request-account-authorization`}
+              href={`https://peifeng.li/request-account-authorization`}
             >
               获取账户访问授权
             </Text>
