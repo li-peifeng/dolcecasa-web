@@ -69,8 +69,8 @@ dependencies:
     specifier: ^4.1.0
     version: 4.1.0
   lightgallery:
-    specifier: ^2.5.0
-    version: 2.5.0
+    specifier: ^2.7.2
+    version: 2.7.2
   mark.js:
     specifier: ^8.11.1
     version: 8.11.1
@@ -1993,8 +1993,8 @@ packages:
     resolution: {integrity: sha512-+RbYT/uuI6VHExCmGyUuMg3A2gQOaCRTzSn8GGDSf3q4cEoUNiINd9u4RGfZXA1UKafW+Hv8bmcKIX4FKbSh0Q==}
     dev: false
 
-  /lightgallery@2.5.0:
-    resolution: {integrity: sha512-pzg5gwflLGlKaK1VqDKpb7yqQ/WSV/TxFaHRR7ld7G5iOI9gkJZ2qKKo2lyqvTvu8yAqNYXoU0w9O/Dll6POkw==}
+  /lightgallery@2.7.2:
+    resolution: {integrity: sha512-Ewdcg9UPDqV0HGZeD7wNE4uYejwH2u0fMo5VAr6GHzlPYlhItJvjhLTR0cL0V1HjhMsH39PAom9iv69ewitLWw==}
     engines: {node: '>=6.0.0'}
     dev: false
 
