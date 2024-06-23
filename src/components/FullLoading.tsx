@@ -15,15 +15,28 @@ export const FullScreenLoading = () => {
   )
 }
 
-export const FullLoading = () => {
+export const FullLoading = (props: {
+  py?: string
+  size?: string
+  thickness?: number
+  ref?: any
+}) => {
+  const merged = mergeProps(
+    {
+      py: "$8",
+      size: "xl",
+      thickness: 4,
+    },
+    props,
+  )
   return (
-    <Center w="$full" h="$full">
+    <Center ref={props.ref} h="$full" w="$full" py={merged.py}>
       <Spinner
-        thickness="4px"
+        thickness={`${merged.thickness}px`}
         speed="0.65s"
         emptyColor="$neutral4"
         color={getMainColor()}
-        size="xl"
+        size={merged.size as any}
       />
     </Center>
   )
@@ -45,13 +58,7 @@ export const CenterLoading = <C extends ElementType = "div">(
 ) => {
   return (
     <Center w="$full" h="$full">
-      <Spinner
-        thickness="4px"
-        speed="0.65s"
-        emptyColor="$neutral4"
-        color={getMainColor()}
-        size="xl"
-      />
+      <Spinner color={getMainColor()} {...props} />
     </Center>
   )
 }
