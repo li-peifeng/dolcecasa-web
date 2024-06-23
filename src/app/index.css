@@ -349,9 +349,9 @@
 
 .lg-item {
   &:not(.lg-start-end-progress) {
-    background: url("/images/loading.gif") no-repeat scroll center center
+    background: url("images/loading.svg") no-repeat scroll center center
       transparent !important;
-    background-size: 56px auto !important;
+    background-size: 64px auto !important;
   }
   display: none !important;
 }
