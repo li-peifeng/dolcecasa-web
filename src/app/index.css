@@ -347,26 +347,26 @@
   -webkit-backdrop-filter: blur(15px) !important;
 }
 
-    .lg-item {
-        &:not(.lg-start-end-progress) {
-            background: url('/images/loading.gif') no-repeat scroll
-                center center transparent !important;
-background-size: 56px auto !important;
+.lg-item {
+  &:not(.lg-start-end-progress) {
+    background: url("/images/loading.gif") no-repeat scroll center center
+      transparent !important;
+    background-size: 56px auto !important;
+  }
+  display: none !important;
 }
-        display: none !important;
-    }
-    &.lg-css3 {
-        .lg-prev-slide,
-        .lg-current,
-        .lg-next-slide {
-            display: inline-block !important;
-        }
-    }
-    &.lg-css {
-        .lg-current {
-            display: inline-block !important;
-        }
-    }
+&.lg-css3 {
+  .lg-prev-slide,
+  .lg-current,
+  .lg-next-slide {
+    display: inline-block !important;
+  }
+}
+&.lg-css {
+  .lg-current {
+    display: inline-block !important;
+  }
+}
 
 .lg-backdrop {
   background-color: #ffffff00 !important;
