@@ -350,7 +350,7 @@
 .lg-item {
   &:not(.lg-start-end-progress) {
     background: url("images/loading.svg") no-repeat scroll center center
-      transparent !important;
+      transparent;
     background-size: 64px auto !important;
   }
   display: none !important;
