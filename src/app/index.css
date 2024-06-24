@@ -347,27 +347,6 @@
   -webkit-backdrop-filter: blur(15px) !important;
 }
 
-.lg-item {
-  &:not(.lg-start-end-progress) {
-    background: url("images/loading.svg") no-repeat scroll center center
-      transparent;
-    background-size: 64px auto !important;
-  }
-  display: none !important;
-}
-&.lg-css3 {
-  .lg-prev-slide,
-  .lg-current,
-  .lg-next-slide {
-    display: inline-block !important;
-  }
-}
-&.lg-css {
-  .lg-current {
-    display: inline-block !important;
-  }
-}
-
 .lg-backdrop {
   background-color: #ffffff00 !important;
   backdrop-filter: blur(15px) !important;
