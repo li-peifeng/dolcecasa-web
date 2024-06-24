@@ -111,8 +111,8 @@ dependencies:
     specifier: ^2.0.6
     version: 2.0.6
   sweetgallery:
-    specifier: ^2.8.0
-    version: 2.8.0(react-dom@17.0.2)(react@17.0.2)
+    specifier: ^2.8.3
+    version: 2.8.3(react-dom@17.0.2)(react@17.0.2)
   typescript-natural-sort:
     specifier: ^0.7.2
     version: 0.7.2
@@ -3426,8 +3426,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /sweetgallery@2.8.0(react-dom@17.0.2)(react@17.0.2):
-    resolution: {integrity: sha512-EUtoUTunNAHYYl2dFeDPT9QeL8zqh0l86QnK2MIrz/b4ymnRv+x3bKWoQ88AFpON3Brqn/7IOMCciIfBQKQXKw==}
+  /sweetgallery@2.8.3(react-dom@17.0.2)(react@17.0.2):
+    resolution: {integrity: sha512-70A6vHni0j/jkaGZtSAFXM9eQ3tfk674zB/XYbT6pL6iDiaj5rRBAynCwISCZx7z6khQp1MTF+qjtDn4+qeRiQ==}
     engines: {node: '>=6.0.0'}
     peerDependencies:
       react: ^17.0.2
