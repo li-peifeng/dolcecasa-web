@@ -3123,8 +3123,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /sweetphotos@2.7.3:
-    resolution: {integrity: sha512-WHtt65PqdVhbhss+HIOWuZHb39yGtWAr5eQkqhIeSmSvGK2kfr5oBeCLoC/UwNVzMcV6SWgn6K2rtAsz+Cyvxg==}
+  /sweetphotos@2.8.0:
+    resolution: {integrity: sha512-Smiq369R9dLVRUAl5WLwUl4u1cFN7UVI5b0tYwdwD5nTNsQmwSo9WXwhZe0XIUxylss5asBx/U93USuW5SqgTA==}
     engines: {node: '>=6.0.0'}
     dev: false
 
